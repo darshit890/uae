@@ -1,0 +1,93 @@
+import React from "react";
+import { FaFacebook, FaInstagram, FaTiktok } from "react-icons/fa";
+import { FaTwitter } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa";
+import { FaYoutube } from "react-icons/fa";
+import Image from "next/image";
+
+function Footer() {
+	return (
+		<>
+        <section className="max-w-7xl mx-auto">
+			<div className=" h-1/2 w-full flex md:flex-row flex-col justify-around items-start pt-20 pb-10 px-6 mx-auto">
+				<div className="py-5 ">
+					<ul>
+					<Image 
+						src={'/logo/logo-uae.jpg'}
+						alt="logo"
+						width={250}
+						height={250}
+						/>
+						<div className="flex gap-5 pb-5 pl-8 pt-6">
+							<FaInstagram className="text-2xl cursor-pointer hover:text-yellow-600" />
+							<FaTwitter className="text-2xl cursor-pointer hover:text-blue-600" />
+							<FaLinkedin className="text-2xl cursor-pointer hover:text-blue-600" />
+							<FaTiktok className="text-2xl cursor-pointer hover:text-red-600" />
+							<FaFacebook className="text-2xl cursor-pointer hover:text-blue-600" />
+						</div>
+					</ul>
+				</div>
+				<div className="p-5">
+					<ul>
+						<p className=" font-bold text-2xl pb-4">Categories</p>
+						<li className="text-gray-500 text-md pb-2 font-semibold hover:text-primary cursor-pointer">
+                            Beauty & Health
+						</li>
+						<li className="text-gray-500 text-md pb-2 font-semibold hover:text-primary cursor-pointer">
+                            Skin Care Products
+						</li>
+						<li className="text-gray-500 text-md pb-2 font-semibold hover:text-primary cursor-pointer">
+                            Home Decor & appliances
+						</li>
+						<li className="text-gray-500 text-md pb-2 font-semibold hover:text-primary cursor-pointer">
+							Jewelry & Accessories 
+						</li>
+						<li className="text-gray-500 text-md pb-2 font-semibold hover:text-primary cursor-pointer">
+                            Makeup Accessories
+						</li>
+						<li className="text-gray-500 text-md pb-2 font-semibold hover:text-primary cursor-pointer">
+                            Perfume & Fragrance
+						</li>
+					</ul>
+				</div>
+				<div className="p-5">
+					<ul>
+						<p className=" font-bold text-2xl pb-4">Legal</p>
+						<li className="text-gray-500 text-md pb-2 font-semibold hover:text-primary cursor-pointer">
+							Privacy Policy
+						</li>
+						<li className="text-gray-500 text-md pb-2 font-semibold hover:text-primary cursor-pointer">
+							Terms & Conditions
+						</li>
+						<li className="text-gray-500 text-md pb-2 font-semibold hover:text-primary cursor-pointer">
+							Refund Policy
+						</li>
+					</ul>
+				</div>
+				<div className="p-5">
+					<ul>
+						<p className=" font-bold text-2xl pb-4">Service Center</p>
+						<li className="text-gray-500 text-md pb-2 font-semibold hover:text-primary cursor-pointer w-[270px]">
+							H.No.24 Behind Dr. Rajeevan&apos;s Clinic, Ajman Indsutrial Area 2, Ajman, UAE
+						</li>
+						<li className="text-gray-500 text-md pb-2 font-semibold hover:text-primary cursor-pointer">
+							Tel: +971558522916
+						</li>
+						<li className="text-gray-500 text-md pb-2 font-semibold hover:text-primary cursor-pointer">
+							Email: raazain.store@gmail.com
+						</li>
+					</ul>
+				</div>
+			</div>
+			
+            </section>
+            <div className="flex flex-col justify-center items-center text-center  py-5 border-t">
+				<h1 className=" text-gray-400 font-semibold">
+					© 2024 RAAZAIN, All rights reserved 
+				</h1>
+			</div>
+		</>
+	);
+}
+
+export default Footer;
