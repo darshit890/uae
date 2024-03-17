@@ -664,3 +664,30 @@ export const COSRX = [
         discount: -42,
     },
 ]
+
+export const OrdinaryT = [
+    {
+        title: 'The Ordinary Salicylic Acid 2% Masque - 50ml',
+        src: 'https://www.raazain.com/cdn/shop/files/masque_1_300x_crop_center.png?v=1705940587',
+        href: '/',
+        price: 40.00,
+        cutoff: 65.00,
+        discount: -38,
+    },
+    {
+        title: 'The Ordinary Ascorbic Acid 8% + Alpha Arbutin 2% - 30ml',
+        src: 'https://www.raazain.com/cdn/shop/files/ascorbicalpha_1_300x_crop_center.png?v=1705940492',
+        href: '/',
+        price: 28.00,
+        cutoff: 55.00,
+        discount: -49,
+    },
+    {
+        title: 'The Ordinary Hyaluronic Acid - 30ml',
+        src: 'https://www.raazain.com/cdn/shop/files/11363395-1414901836909521_300x_crop_center.jpg?v=1705940557',
+        href: '/',
+        price: 30.00,
+        cutoff: 60.00,
+        discount: -50,
+    },
+]

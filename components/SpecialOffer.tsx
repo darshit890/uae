@@ -16,9 +16,9 @@ export const SpecialOffer = () => {
         
       )
   return (
-    <section className='max-w-6xl mt-20 bg-primary rounded-md mx-auto '>
+    <section className='mt-20 bg-primary rounded-md '>
         <div className="flex py-6 items-center rounded-lg flex-col bg-gradient-to-t from-[#ff1824] to-[#ee198e]">
-            <Tabs aria-label='options' color='primary' size='lg'>
+            <Tabs aria-label='options' color='primary' size='lg' className="md:max-w-xl max-w-md">
                 <Tab key="beauty" title={
                     <div className="flex flex-col py-1">
                         <h1 className="text-sm">Beauty & Health</h1>
@@ -27,17 +27,17 @@ export const SpecialOffer = () => {
                 } className="flex flex-row">
                 <Carousel
                     plugins={[plugin.current]}
-                    className="w-full max-w-6xl px-6"
+                    className="lg:max-w-full md:max-w-3xl max-w-md px-10 mx-16 "
                     onMouseEnter={plugin.current.stop}
                     onMouseLeave={plugin.current.reset}
                     
                 >
                     <CarouselContent>
                     {Sbeauty.map((sp, index) => (
-                        <CarouselItem key={index}  className="basis-1/4">
+                        <CarouselItem key={index}  className="lg:basis-1/2 xl:basis-1/5 ">
                         <div className="p-1">
-                            <Card className="h-[420px] cursor-pointer mt-10">
-                            <CardBody className="flex  aspect-auto  p-0 flex-col justify-between">
+                            <Card className="h-[420px] cursor-pointer mt-10 flex justify-center">
+                            <CardBody className="flex  aspect-auto  p-0 flex-col justify-between items-center md:items-start">
                                 <Image className="py-4 w-[300px] h-[300px]" src={sp.src} alt="Tax Innovation"/>
                                 <div>
                                 <p className="text-muted-foreground text-sm px-5 py-1">{sp.title}</p>
@@ -65,20 +65,22 @@ export const SpecialOffer = () => {
                 } >
                 <Carousel
                     plugins={[plugin.current]}
-                    className="w-full max-w-6xl px-6"
+                    className="w-full px-6"
                     onMouseEnter={plugin.current.stop}
                     onMouseLeave={plugin.current.reset}
                     
                 >
                    <CarouselContent>
                     {SCosmetics.map((sp, index) => (
-                        <CarouselItem key={index}  className="basis-1/4">
+                        <CarouselItem key={index}  className="basis-1/5">
                         <div className="p-1">
                             <Card className="h-[420px] cursor-pointer mt-10">
-                            <CardBody className="flex  aspect-auto  p-0 flex-col justify-between">
-                                <Image className="py-4 w-[300px] h-[300px]" src={sp.src} alt="Tax Innovation"/>
+                            <CardBody className="flex p-0 flex-col justify-between">
+                                <div className="flex justify-center">
+                                <Image className="py-4 w-[300px] h-[300px] " src={sp.src} alt="Tax Innovation"/>
+                                </div>
                                 <div>
-                                <p className="text-muted-foreground text-sm px-5 py-1">{sp.title}</p>
+                                <p className="text-muted-foreground text-sm px-5 py-1 max-w-sm">{sp.title}</p>
                                 <h1 className="text-left px-5 font-medium text-primary">Dhs. {sp.price}</h1>
                                 <div className="flex flex-row items-center pb-6">
                                     {sp.cutoff ? 
@@ -107,18 +109,20 @@ export const SpecialOffer = () => {
                 } >
                 <Carousel
                     plugins={[plugin.current]}
-                    className="w-full max-w-6xl px-6"
+                    className="w-full px-6"
                     onMouseEnter={plugin.current.stop}
                     onMouseLeave={plugin.current.reset}
                     
                 >
                    <CarouselContent>
                     {SHome.map((sp, index) => (
-                        <CarouselItem key={index}  className="basis-1/4">
+                        <CarouselItem key={index}  className="basis-1/5">
                         <div className="p-1">
                             <Card className="h-[450px] cursor-pointer mt-10 ">
                             <CardBody className="flex  aspect-auto  p-0 flex-col justify-between">
-                                <Image className="py-4 w-[300px] h-[300px]" src={sp.src} alt="Tax Innovation"/>
+                                <div className="flex justify-center ">
+                                <Image className="py-4 w-[300px] h-[300px] rounded-md" src={sp.src} alt="Tax Innovation"/>
+                                </div>
                                 <div>
                                 <p className="text-muted-foreground text-sm px-5 py-1">{sp.title}</p>
                                 <h1 className="text-left px-5 font-medium text-primary">Dhs. {sp.price}</h1>

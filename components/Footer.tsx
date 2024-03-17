@@ -8,7 +8,7 @@ import Image from "next/image";
 function Footer() {
 	return (
 		<>
-        <section className="max-w-7xl mx-auto">
+        <section className="mx-auto">
 			<div className=" h-1/2 w-full flex md:flex-row flex-col justify-around items-start pt-20 pb-10 px-6 mx-auto">
 				<div className="py-5 ">
 					<ul>

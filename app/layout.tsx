@@ -5,6 +5,7 @@ import Provider from "@/utils/Provider";
 import Navbar from "@/components/Navbar";
 import { TNav } from "@/components/TNav";
 import Footer from "@/components/Footer";
+import { Bnav } from "@/components/Bnav";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -22,9 +23,12 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <Provider>
+          <div className="flex flex-col top-0 fixed z-50 items-center w-full">
           <TNav />
           <Navbar />
-          <main className="border-b">{children}</main>
+          <Bnav />
+          </div>
+          <main className="border-b pt-[146px]">{children}</main>
           <Footer />
         </Provider>
       </body>

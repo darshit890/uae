@@ -10,7 +10,7 @@ const ProductPage = () => {
 
 
     return (
-        <section className='max-w-7xl mx-auto  pl-10 pr-5 pt-8 '>
+        <section className='pl-10 pr-5 pt-8 '>
             <BreadCrumbs/>
             <ProductDisplay />
             <ProductDescription />

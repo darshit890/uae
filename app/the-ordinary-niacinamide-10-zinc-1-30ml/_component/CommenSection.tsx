@@ -44,12 +44,13 @@ export const CommenSection = () => {
                     </div>
                 </div>
             </div>
-            <div className="flex flex-col pl-10 pt-5 h-[500px]">
+            <div className="flex flex-col pl-10 h-[500px]">
                 <Divider orientation="vertical" />
             </div>
             <div className="flex flex-col  gap-y-2 ">
-                <h1 className='text-xl font-medium mt-10 pl-5'>30 Comments</h1>
-                <Divider className="w-[800px]" orientation="horizontal" />
+                <Divider className="w-[1382px]" orientation="horizontal" />
+                <h1 className='text-xl font-medium pl-5'>30 Comments</h1>
+                <Divider className="w-[1382px]" orientation="horizontal" />
                 <Card className="ml-8 my-3 w-[600px]">
                     <CardBody className="flex items-start">
                     <User   
@@ -105,24 +106,6 @@ export const CommenSection = () => {
                     </CardFooter>
                 </Card>
             </div>
-                <Card className="ml-8 my-3 w-[600px]">
-                    <CardBody className="flex items-start">
-                    <User   
-                        name="Junior Garcia"
-                        description={(
-                            <Link href="https://twitter.com/jrgarciadev" size="sm" isExternal>
-                            @jrgarciadev
-                            </Link>
-                        )}
-                        avatarProps={{
-                            src: "https://avatars.githubusercontent.com/u/30373425?v=4"
-                        }}
-                        />
-                    </CardBody>
-                    <CardFooter>
-                        Product was good
-                    </CardFooter>
-                </Card>
             </div>
 
         </div>
