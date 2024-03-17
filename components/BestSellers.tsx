@@ -5,7 +5,7 @@ import React from 'react'
 
 export const BestSellers = () => {
   return (
-    <section className=' mt-10 hidden'>
+    <section className=' mt-10 '>
         <div className='pt-10 px-10 flex flex-col'>
             <h1 className='font-medium text-3xl text-gray-700 pb-2 tracking-tighter px-6'>Best Selling Products</h1>
             <div className='flex flex-col mx-auto mt-5'>
