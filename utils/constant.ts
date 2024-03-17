@@ -312,14 +312,6 @@ export const related: { title: string; src: string; href: string; price: number;
         cutoff: 80.00,
         discount: -38,
     },
-    {
-        title: 'COSRX AHA/BHA Clarifying Treatment Toner',
-        src: 'https://www.raazain.com/cdn/shop/files/AdvanceSnailAHABHA_1_300x_crop_center.png?v=1709580039',
-        href: '/',
-        price: 55.00,
-        cutoff: 95.00,
-        discount: -42,
-    },
 ]
 
 export const tSkin = [
@@ -481,14 +473,6 @@ export const LaRoche = [
         cutoff: 125.00,
         discount: -28,
     },
-    {
-        title: 'Miss Myth Aloe Vera Soothing Gel Mask - 30ml',
-        src: 'https://www.raazain.com/cdn/shop/files/hyalu_300x_crop_center.png?v=1705948734',
-        href: '/',
-        price: 80.00,
-        cutoff: 120.00,
-        discount: -33,
-    },
 ]
 
 export const tKitchen = [
@@ -518,12 +502,7 @@ export const tKitchen = [
         href: '/',
         price: 50.00,
     },
-    {
-        title: '1pc 200ml Oil Spray Bottle',
-        src: 'https://www.raazain.com/cdn/shop/files/Untitleddesign_7_afe2259c-8018-454c-abeb-8cbf88b7268c_270x_crop_center.png?v=1703178238',
-        href: '/',
-        price: 40.00,
-    },
+
 ]
 
 export const Ordinary = [
@@ -567,12 +546,6 @@ export const Ordinary = [
         cutoff: 50.00,
         discount: -30,
     },
-    {
-        title: 'The Ordinary Salicylic Acid 2% Solution - 30ml',
-        src: 'https://www.raazain.com/cdn/shop/files/the-ordinary-vitamin-c-suspension-30-in-silicone-472326_300x_crop_center.webp?v=1702987275',
-        href: '/',
-        price: 25.00,
-    },
 ]
 
 export const OTWO = [
@@ -605,12 +578,6 @@ export const OTWO = [
         src: 'https://www.raazain.com/cdn/shop/files/ULTRASTAY_5_300x_crop_center.png?v=1707941274',
         href: '/',
         price: 30.00,
-    },
-    {
-        title: 'The Ordinary Salicylic Acid 2% Solution - 30ml',
-        src: 'https://www.raazain.com/cdn/shop/files/Miracle_300x_crop_center.png?v=1707421749',
-        href: '/',
-        price: 25.00,
     },
 ]
 
@@ -650,14 +617,6 @@ export const COSRX = [
     {
         title: 'COSRX AHA/BHA Clarifying Treatment Toner',
         src: 'https://www.raazain.com/cdn/shop/files/AdvanceSnailAHABHA_1_300x_crop_center.png?v=1709580039',
-        href: '/',
-        price: 55.00,
-        cutoff: 95.00,
-        discount: -42,
-    },
-    {
-        title: 'COSRX Hyaluronic Acid Hydra Power Essence 100ml',
-        src: 'https://www.raazain.com/cdn/shop/files/AdvanceSnailhydrapower_300x_crop_center.png?v=1708968700',
         href: '/',
         price: 55.00,
         cutoff: 95.00,
