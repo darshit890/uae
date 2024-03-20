@@ -1,17 +1,18 @@
 import { COSRX, LaRoche, OTWO, Ordinary} from '@/utils/constant'
-import { Card, CardFooter, CardHeader, Image } from '@nextui-org/react'
+import { Card, CardFooter, CardHeader } from '@nextui-org/react'
+import Image from 'next/image'
 import React from 'react'
 
 export const NormalProduct = () => {
   return (
-    <section className='mx-auto my-10'> 
-        <div className='pt-10 px-10 flex flex-col'>
-            <h1 className='font-medium text-3xl text-gray-700 pb-2 tracking-tighter px-6'>La-Roche Posay</h1>
-            <div className='grid lg:grid-cols-4 gap-y-8 xl:grid-cols-5 md:grid-cols-3  grid-cols-1 space-x-3 my-8 mx-auto md:mx-0'>
+    <section className='mx-auto my-10 max-w-7xl px-3'> 
+        <div className='pt-10 flex flex-col '>
+            <h1 className='font-medium text-3xl text-gray-700 pb-2 tracking-tighter'>La-Roche Posay</h1>
+            <div className='grid lg:grid-cols-4 gap-y-8 xl:grid-cols-5 md:grid-cols-3  grid-cols-2 gap-x-3 my-8 mx-auto md:mx-0'>
               {LaRoche.map((sp) => (
-                <Card key={sp.title} className='flex justify-between'>
+                <Card key={sp.title} className='flex justify-between cursor-pointer'>
                   <CardHeader>
-                    <Image src={sp.src} alt='product' className='h-[300px] w-[300px]'  />
+                    <Image width={300} height={300} src={sp.src} alt='product'  />
                   </CardHeader>
                   <CardFooter className='flex flex-col items-start space-y-1'>
                     <h1 className='text-sm'>{sp.title}</h1>
@@ -26,13 +27,13 @@ export const NormalProduct = () => {
               ))}
             </div>
         </div>
-        <div className='pt-10 px-10 flex flex-col'>
-            <h1 className='font-medium text-3xl text-gray-700 pb-2 tracking-tighter px-6'>The Ordinary</h1>
-            <div className='grid lg:grid-cols-4 gap-y-8 xl:grid-cols-5 md:grid-cols-3  grid-cols-1 space-x-3 my-8 mx-auto md:mx-0'>
+        <div className='pt-10 flex flex-col'>
+            <h1 className='font-medium text-3xl text-gray-700 pb-2 tracking-tighter'>The Ordinary</h1>
+            <div className='grid lg:grid-cols-4 gap-y-8 xl:grid-cols-5 md:grid-cols-3  grid-cols-2 gap-x-3 my-8 mx-auto md:mx-0'>
               {Ordinary.map((sp) => (
-                <Card key={sp.title} className='flex justify-between'>
+                <Card key={sp.title} className='flex justify-between cursor-pointer'>
                   <CardHeader>
-                    <Image src={sp.src} alt='product' className='h-[300px] w-[300px]'  />
+                    <Image width={300} height={300} src={sp.src} alt='product'/>
                   </CardHeader>
                   <CardFooter className='flex flex-col items-start space-y-1'>
                     <h1 className='text-sm'>{sp.title}</h1>
@@ -47,13 +48,13 @@ export const NormalProduct = () => {
               ))}
             </div>
         </div>
-        <div className='pt-10 px-10 flex flex-col'>
-            <h1 className='font-medium text-3xl text-gray-700 pb-2 tracking-tighter px-6'>O.TWO.O</h1>
-            <div className='grid lg:grid-cols-4 gap-y-8 xl:grid-cols-5 md:grid-cols-3  grid-cols-1 space-x-3 my-8 mx-auto md:mx-0'>
+        <div className='pt-10 flex flex-col'>
+            <h1 className='font-medium text-3xl text-gray-700 pb-2 tracking-tighter'>O.TWO.O</h1>
+            <div className='grid lg:grid-cols-4 gap-y-8 xl:grid-cols-5 md:grid-cols-3  grid-cols-2 gap-x-3 my-8 mx-auto md:mx-0'>
               {OTWO.map((sp) => (
-                <Card key={sp.title} className='flex justify-between'>
+                <Card key={sp.title} className='flex justify-between cursor-pointer'>
                   <CardHeader>
-                    <Image src={sp.src} alt='product' className='h-[300px] w-[300px]'  />
+                    <Image height={300} width={300} src={sp.src} alt='product'/>
                   </CardHeader>
                   <CardFooter className='flex flex-col items-start space-y-1'>
                     <h1 className='text-sm'>{sp.title}</h1>
@@ -63,13 +64,13 @@ export const NormalProduct = () => {
               ))}
             </div>
         </div>
-        <div className='pt-10 px-10 flex flex-col'>
-            <h1 className='font-medium text-3xl text-gray-700 pb-2 tracking-tighter px-6'>COSRX Advanced Snail 92</h1>
-            <div className='grid lg:grid-cols-4 gap-y-8 xl:grid-cols-5 md:grid-cols-3  grid-cols-1 space-x-3 my-8 mx-auto md:mx-0'>
+        <div className='pt-10 flex flex-col'>
+            <h1 className='font-medium text-3xl text-gray-700 pb-2 tracking-tighter'>COSRX Advanced Snail 92</h1>
+            <div className='grid lg:grid-cols-4 gap-y-8 xl:grid-cols-5 md:grid-cols-3  grid-cols-2 gap-x-3 my-8 mx-auto md:mx-0'>
               {COSRX.map((sp) => (
-                <Card key={sp.title} className='flex justify-between'>
+                <Card key={sp.title} className='flex justify-between cursor-pointer'>
                   <CardHeader>
-                    <Image src={sp.src} alt='product' className='h-[300px] w-[300px]'  />
+                    <Image height={300} width={300} src={sp.src} alt='product'  />
                   </CardHeader>
                   <CardFooter className='flex flex-col items-start space-y-1'>
                     <h1 className='text-sm'>{sp.title}</h1>

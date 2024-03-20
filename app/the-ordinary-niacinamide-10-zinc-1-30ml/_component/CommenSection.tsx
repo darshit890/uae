@@ -5,7 +5,7 @@ import { FaStar } from "react-icons/fa"
 
 export const CommenSection = () => {
   return (
-    <div className='mt-20 '>
+    <div className='my-20 '>
         <h1 className='font-medium text-3xl'><span className='font-semibold text-primary'>| </span>Product Ratings & Reviews</h1>
         <div className='flex flex-row'>
             <div className='flex flex-col pl-10 gap-y-5'>
@@ -44,70 +44,7 @@ export const CommenSection = () => {
                     </div>
                 </div>
             </div>
-            <div className="flex flex-col pl-10 h-[500px]">
-                <Divider orientation="vertical" />
             </div>
-            <div className="flex flex-col  gap-y-2 ">
-                <Divider className="w-[1382px]" orientation="horizontal" />
-                <h1 className='text-xl font-medium pl-5'>30 Comments</h1>
-                <Divider className="w-[1382px]" orientation="horizontal" />
-                <Card className="ml-8 my-3 w-[600px]">
-                    <CardBody className="flex items-start">
-                    <User   
-                        name="Junior Garcia"
-                        description={(
-                            <Link href="https://twitter.com/jrgarciadev" size="sm" isExternal>
-                            @jrgarciadev
-                            </Link>
-                        )}
-                        avatarProps={{
-                            src: "https://avatars.githubusercontent.com/u/30373425?v=4"
-                        }}
-                        />
-                    </CardBody>
-                    <CardFooter>
-                        Product was good
-                    </CardFooter>
-                </Card>
-                <Card className="ml-8 my-3 w-[600px]">
-                    <CardBody className="flex items-start">
-                    <User   
-                        name="Junior Garcia"
-                        description={(
-                            <Link href="https://twitter.com/jrgarciadev" size="sm" isExternal>
-                            @jrgarciadev
-                            </Link>
-                        )}
-                        avatarProps={{
-                            src: "https://avatars.githubusercontent.com/u/30373425?v=4"
-                        }}
-                        />
-                    </CardBody>
-                    <CardFooter>
-                        Product was good
-                    </CardFooter>
-                </Card>
-                <Card className="ml-8 my-3 w-[600px]">
-                    <CardBody className="flex items-start">
-                    <User   
-                        name="Junior Garcia"
-                        description={(
-                            <Link href="https://twitter.com/jrgarciadev" size="sm" isExternal>
-                            @jrgarciadev
-                            </Link>
-                        )}
-                        avatarProps={{
-                            src: "https://avatars.githubusercontent.com/u/30373425?v=4"
-                        }}
-                        />
-                    </CardBody>
-                    <CardFooter>
-                        Product was good
-                    </CardFooter>
-                </Card>
-            </div>
-            </div>
-
         </div>
   )
 }

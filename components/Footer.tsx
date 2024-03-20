@@ -1,9 +1,9 @@
 import React from "react";
-import { FaFacebook, FaInstagram, FaTiktok } from "react-icons/fa";
-import { FaTwitter } from "react-icons/fa";
+import { FaFacebook, FaInstagram, FaPinterest, FaTiktok } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
-import { FaYoutube } from "react-icons/fa";
 import Image from "next/image";
+import Link from "next/link";
+import { FaXTwitter } from "react-icons/fa6";
 
 function Footer() {
 	return (
@@ -19,11 +19,24 @@ function Footer() {
 						height={250}
 						/>
 						<div className="flex gap-5 pb-5 pl-8 pt-6">
-							<FaInstagram className="text-2xl cursor-pointer hover:text-yellow-600" />
-							<FaTwitter className="text-2xl cursor-pointer hover:text-blue-600" />
+							<Link href={'https://www.instagram.com/raazain.store/'}>
+							  <FaInstagram className="text-2xl cursor-pointer hover:text-yellow-600" />
+							</Link>
+							<Link href={'https://twitter.com/i/flow/login?redirect_after_login=%2Fraazainuae'}>
+							<FaXTwitter className="text-2xl cursor-pointer hover:text-blue-600" />
+							</Link>
+							<Link href={'https://www.linkedin.com/uas/login?session_redirect=https%3A%2F%2Fwww.linkedin.com%2Fcompany%2F101499627%2Fadmin%2F'}>
 							<FaLinkedin className="text-2xl cursor-pointer hover:text-blue-600" />
+							</Link>
+							<Link href={'https://www.tiktok.com/@raazain.store'}>
 							<FaTiktok className="text-2xl cursor-pointer hover:text-red-600" />
-							<FaFacebook className="text-2xl cursor-pointer hover:text-blue-600" />
+							</Link>
+							<Link href={'https://www.pinterest.com/raazainstore/'}>
+								<FaPinterest className="hover:text-primary text-2xl cursor-pointer" />
+							</Link>
+							<Link href={'https://www.facebook.com/raazain.uae'}>
+								<FaFacebook className="text-2xl cursor-pointer hover:text-blue-600" />
+							</Link>
 						</div>
 					</ul>
 				</div>
