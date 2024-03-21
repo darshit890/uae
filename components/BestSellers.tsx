@@ -74,9 +74,9 @@ export const BestSellers = () => {
                 </Tabs>
             </div>
         </div>
-        <div className='flex flex-col md:flex-row gap-y-3 my-20  max-w-7xl mx-auto  gap-x-5 px-5'>
-          <Image height={300} width={500} className='cursor-pointer rounded-xl ' src='https://www.raazain.com/cdn/shop/files/Men_longwear_copy_cfaebf1e-00d4-4019-ba42-f7a207bde162.jpg?v=1702937400' alt='category' />
-          <Image height={300} width={500} className='cursor-pointer rounded-xl' src='https:////www.raazain.com/cdn/shop/files/women_longwear_copy.jpg?v=1702937416' alt='category' />
+        <div className='flex flex-col lg:flex-row gap-y-4 my-20  max-w-7xl mx-auto  gap-x-5 '>
+          <Image height={300} width={620} className='cursor-pointer rounded-xl ' src='https://www.raazain.com/cdn/shop/files/Men_longwear_copy_cfaebf1e-00d4-4019-ba42-f7a207bde162.jpg?v=1702937400' alt='category' />
+          <Image height={300} width={620} className='cursor-pointer rounded-xl' src='https:////www.raazain.com/cdn/shop/files/women_longwear_copy.jpg?v=1702937416' alt='category' />
         </div>
     </section>
   )

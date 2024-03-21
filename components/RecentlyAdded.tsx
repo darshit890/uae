@@ -27,9 +27,9 @@ export const RecentlyAdded = () => {
               ))}
             </div>
         </div>
-        <div className='flex flex-col  items-center md:flex-row gap-y-3 my-20  max-w-7xl mx-auto gap-x-5'>
-          <Image width={500} height={300} className='cursor-pointer rounded-xl' src='https://www.raazain.com/cdn/shop/files/Skin_product_751x190_01620a7c-d4a2-493c-ab57-faa189e2f311.jpg?v=1702936143' alt='category' />
-          <Image width={500} height={300} className='cursor-pointer rounded-xl' src='https://www.raazain.com/cdn/shop/files/beauty_product_751x190_f42c7d58-0d1d-4fb3-b363-36b3327529bd.jpg?v=1702936148' alt='category' />
+        <div className='flex flex-col lg:flex-row gap-y-4 my-20  max-w-7xl mx-auto  gap-x-5'>
+          <Image width={620} height={300} className='cursor-pointer rounded-xl w-[200] h-[50]' src='https://www.raazain.com/cdn/shop/files/Skin_product_751x190_01620a7c-d4a2-493c-ab57-faa189e2f311.jpg?v=1702936143' alt='category' />
+          <Image width={620} height={300} className='cursor-pointer rounded-xl w-[200] h-[50]' src='https://www.raazain.com/cdn/shop/files/beauty_product_751x190_f42c7d58-0d1d-4fb3-b363-36b3327529bd.jpg?v=1702936148' alt='category' />
         </div>
     </section>
   )

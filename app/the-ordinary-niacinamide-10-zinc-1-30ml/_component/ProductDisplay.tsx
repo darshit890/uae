@@ -20,23 +20,23 @@ export const ProductDisplay = () => {
     const [amount, setAmount] = useState(number);
     
   return (
-    <div className='flex flex-col  px-10 lg:flex-row gap-20'>
-            <div className='flex flex-col gap-6 '>
-                <Image src={activeImg} alt="a" width={400} height={400} className='w-[400px] h-[370px]  object-cover rounded-xl border mt-10'/>
-                <div className='flex flex-row space-x-7 pt-10 '>
-                    <Image src={images.img1} alt="a" height={16} width={16} className={`${activeImg === images.img1 ? "border border-primary" : "border"} w-16 h-16 rounded-md cursor-pointer`} onClick={() => setActiveImage(images.img1)}/>
-                    <Image src={images.img2} alt="a" height={16} width={16} className={`${activeImg === images.img2 ? "border border-primary" : "border"} w-16 h-16 rounded-md cursor-pointer`} onClick={() => setActiveImage(images.img2)}/>
-                    <Image src={images.img3} alt="a" height={16} width={16} className={`${activeImg === images.img3 ? "border border-primary" : "border"} w-16 h-16 rounded-md cursor-pointer`} onClick={() => setActiveImage(images.img3)}/>
-                    <Image src={images.img4} alt="a" height={16} width={16}className={`${activeImg === images.img4 ? "border border-primary" : "border"} w-16 h-16 rounded-md cursor-pointer`} onClick={() => setActiveImage(images.img4)}/>
+    <div className='flex flex-col px-10 lg:flex-row gap-20'>
+            <div className='flex flex-col gap-6 mx-auto'>
+                <Image src={activeImg} alt="a" width={300} height={300} className='w-[400px] h-[300px]  object-cover rounded-xl border mt-10 lg:mx-0'/>
+                <div className='flex flex-row space-x-2  sm:space-x-5 pt-16 mx-auto lg:mx-0'>
+                    <Image src={images.img1} alt="a" height={14} width={14} className={`${activeImg === images.img1 ? "border border-primary" : "border"} w-14 h-14 rounded-md cursor-pointer`} onClick={() => setActiveImage(images.img1)}/>
+                    <Image src={images.img2} alt="a" height={14} width={14} className={`${activeImg === images.img2 ? "border border-primary" : "border"} w-14 h-14 rounded-md cursor-pointer`} onClick={() => setActiveImage(images.img2)}/>
+                    <Image src={images.img3} alt="a" height={14} width={14} className={`${activeImg === images.img3 ? "border border-primary" : "border"} w-14 h-14 rounded-md cursor-pointer`} onClick={() => setActiveImage(images.img3)}/>
+                    <Image src={images.img4} alt="a" height={14} width={14}className={`${activeImg === images.img4 ? "border border-primary" : "border"} w-14 h-14 rounded-md cursor-pointer`} onClick={() => setActiveImage(images.img4)}/>
                 </div>
             </div>
             {/* ABOUT */}
-            <div className='flex flex-col gap-4 gap-y-10 lg:w-2/4 mt-10 '>
+            <div className='flex flex-col gap-y-1 lg:w-2/4 mt-10 '>
                 <div>
                     <span className=' text-primary font-semibold'>Beauty & Health</span>
-                    <h1 className='text-3xl font-bold'>The Ordinary Niacinamide 10% + Zinc 1% - 30ml</h1>
+                    <h1 className='text-xl md:text-3xl font-bold'>The Ordinary Niacinamide 10% + Zinc 1% - 30ml</h1>
                 </div>
-                <div className='space-y-2'>
+                <div className='space-y-2 text-sm pt-2'>
                     <p className='tracking-tighter text-sm text-muted-foreground'><span className='font-medium text-black'>AVAILABILITY</span> : ✅ In Stock</p>
                     <p className='tracking-tighter text-sm text-muted-foreground'><span className='font-medium text-black'>PRODUCT TYPE</span> : Skin Care Product</p>
                     <p className='tracking-tighter text-sm text-muted-foreground'><span className='font-medium text-black'>VENDOR</span> : RAAZAIN</p>
@@ -44,7 +44,7 @@ export const ProductDisplay = () => {
                 <p className='text-gray-700 '>
                 A universal serum for blemish-prone skin that smooths, brightens, and supports. Niacinamide (Vitamin B3) is indicated to reduce the appearance of skin...
                 </p>
-                <div className='flex flex-row items-center gap-5'>
+                <div className='flex flex-row items-center gap-5 pt-2'>
                 <h6 className='text-2xl font-semibold text-primary'>Dhs. 28.00</h6>
                 <h6 className='line-through'>Dhs. 48.00</h6>
                 </div>

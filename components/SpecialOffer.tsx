@@ -17,25 +17,20 @@ export const SpecialOffer = () => {
         
       )
   return (
-    <section className='mt-20 bg-primary rounded-md max-w-7xl mx-auto lg:block hidden'>
+    <section className='mt-20 bg-primary rounded-md max-w-7xl mx-auto hidden lg:block'>
         <div className="flex py-6 items-center rounded-lg flex-col bg-gradient-to-t from-[#ff1824] to-[#ee198e]">
             <Tabs aria-label='options' color='primary' size='lg' className="md:max-w-xl max-w-md">
-                <Tab key="beauty" title={
-                    <div className="flex flex-col py-1">
-                        <h1 className="text-sm">Beauty & Health</h1>
-                        <p className="text-xs">Shocking Sale upto 40% to 50%</p>
-                    </div>
-                } className="flex flex-row">
+                <Tab key="beauty" title={'Beauty/Health'} className="flex flex-row text-xs">
                 <Carousel
                     plugins={[plugin.current]}
-                    className="lg:max-w-7xl"
+                    className="xl:max-w-7xl lg:max-w-7xl px-10"
                     onMouseEnter={plugin.current.stop}
                     onMouseLeave={plugin.current.reset}
                     
                 >
-                    <CarouselContent>
+                    <CarouselContent className="flex mx-auto ">
                     {Sbeauty.map((sp, index) => (
-                        <CarouselItem key={index}  className="xl:basis-1/5 lg:basis-1/4">
+                        <CarouselItem key={index}  className="lg:basis-1/3 xl:basis-1/4  ">
                         <div className="p-1">
                             <Card key={sp.title} className='flex justify-between cursor-pointer items-stretch w-[250px] h-[400px]'>
                                 <CardHeader>
@@ -57,22 +52,17 @@ export const SpecialOffer = () => {
                     </CarouselContent>
                 </Carousel>
                 </Tab>
-                <Tab key="cosmetics" title={
-                    <div className="flex flex-col py-1">
-                        <h1 className="text-sm">O.TWO.O Cosmetics</h1>
-                        <p className="text-xs">Coupon Deal Upto 30% off</p>
-                    </div>
-                } >
+                <Tab key="cosmetics" title={'O.Two.O'} className="flex flex-row text-xs">
                 <Carousel
                     plugins={[plugin.current]}
-                    className="w-full px-6"
+                    className="xl:max-w-7xl lg:max-w-7xl px-10"
                     onMouseEnter={plugin.current.stop}
                     onMouseLeave={plugin.current.reset}
                     
                 >
-                   <CarouselContent>
+                   <CarouselContent className="flex mx-auto ">
                     {SCosmetics.map((sp, index) => (
-                        <CarouselItem key={index}  className="basis-1/5">
+                        <CarouselItem key={index}  className="lg:basis-1/3 xl:basis-1/4  ">
                         <div className="p-1">
                             <Card className="h-[420px] cursor-pointer mt-10 ">
                             <CardBody className="flex p-0 flex-col justify-between">
@@ -97,26 +87,19 @@ export const SpecialOffer = () => {
                         </CarouselItem>
                     ))}
                     </CarouselContent>
-                    <CarouselPrevious />
-                    <CarouselNext />
                 </Carousel> 
                 </Tab>
-                <Tab key="home" title={
-                    <div className="flex flex-col py-1">
-                        <h1 className="text-sm">HOME DÉCOR & APPLIANCES</h1>
-                        <p className="text-xs">Only from 50 AED</p>
-                    </div>
-                } >
+                <Tab key="home" title={'Home Decor'} className="flex flex-row text-xs">
                 <Carousel
                     plugins={[plugin.current]}
-                    className="w-full px-6"
+                    className="xl:max-w-7xl lg:max-w-7xl px-10"
                     onMouseEnter={plugin.current.stop}
                     onMouseLeave={plugin.current.reset}
                     
                 >
-                   <CarouselContent>
+                   <CarouselContent className="flex mx-auto ">
                     {SHome.map((sp, index) => (
-                        <CarouselItem key={index}  className="basis-1/5">
+                        <CarouselItem key={index}  className="lg:basis-1/3 xl:basis-1/4">
                         <div className="p-1">
                             <Card className="h-[450px] cursor-pointer mt-10 ">
                             <CardBody className="flex  aspect-auto  p-0 flex-col justify-between">
@@ -141,8 +124,6 @@ export const SpecialOffer = () => {
                         </CarouselItem>
                     ))}
                     </CarouselContent>
-                    <CarouselPrevious />
-                    <CarouselNext />
                 </Carousel>
                 </Tab>
             </Tabs>

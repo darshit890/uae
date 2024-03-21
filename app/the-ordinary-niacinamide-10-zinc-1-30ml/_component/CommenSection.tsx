@@ -5,7 +5,7 @@ import { FaStar } from "react-icons/fa"
 
 export const CommenSection = () => {
   return (
-    <div className='my-20 '>
+    <div className='my-20 px-10'>
         <h1 className='font-medium text-3xl'><span className='font-semibold text-primary'>| </span>Product Ratings & Reviews</h1>
         <div className='flex flex-row'>
             <div className='flex flex-col pl-10 gap-y-5'>
