@@ -1,14 +1,13 @@
 'use client'
 import { ChevronDown, MenuIcon } from 'lucide-react'
 import { Button } from './ui/button'
-import { NavigationMenu, NavigationMenuItem, NavigationMenuList, NavigationMenuTrigger } from './ui/navigation-menu'
 import Link from 'next/link'
-import {  Dropdown,  DropdownTrigger,  DropdownMenu,  DropdownSection,  DropdownItem} from "@nextui-org/react";
+import {  Dropdown,  DropdownTrigger,  DropdownMenu, DropdownItem} from "@nextui-org/react";
 
 export const Bnav = () => {
   return (
     <section className='border-b w-full bg-primary'>
-        <div className='h-12  flex flex-row justify-start   md:pl-8 px-4'>
+        <div className='h-12  flex flex-row justify-start max-w-7xl md:pl-8 px-4 mx-auto'>
             <div className='flex flex-row items-center gap-x-10 text-white'>
                 <Button variant='link' className='text-white flex flex-row gap-x-1'>
                     <MenuIcon />

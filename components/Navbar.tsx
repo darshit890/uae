@@ -9,7 +9,7 @@ import { Input } from "./ui/input";
 export default function Navbar() {
   
   return (
-    <Nav  maxWidth='full' isBordered isBlurred={false} >
+    <Nav  maxWidth='xl' isBordered isBlurred={false} >
       <NavbarContent className="flex pr-3" justify="start">
         <NavbarBrand>
         <Link color="foreground" href="/">

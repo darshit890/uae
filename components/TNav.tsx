@@ -4,7 +4,7 @@ import React from 'react'
 export const TNav = () => {
   return (
     <section className='border-b bg-white w-full'>
-        <div className='h-9  flex flex-row justify-between  md:pl-8 px-4 '>
+        <div className='h-9  flex flex-row justify-between  md:pl-8 px-4 max-w-7xl mx-auto'>
             <div className='flex flex-row '>
                 <div className='flex items-center gap-x-1 cursor-pointer '>
                     <MapPinned className='h-4 w-4 text-primary text-sm'/>
