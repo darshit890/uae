@@ -3,14 +3,20 @@ import { useState } from 'react'
 import Image from 'next/image'
 import { Button } from '@nextui-org/react'
 import { OrdinaryT } from '@/utils/constant'
+import { SanityProduct } from '@/lib/inventory'
+import { urlFor } from '@/app/lib/sanity'
 
-export const ProductDisplay = () => {
+interface Props {
+    product: SanityProduct
+  }
+
+export const ProductDisplay = ({ product }: Props) => {
 
     const [images, setImages] = useState({
-        img1 : "https://theordinary.com/dw/image/v2/BFKJ_PRD/on/demandware.static/-/Sites-deciem-master/default/dwce8a7cdf/Images/products/The%20Ordinary/rdn-niacinamide-10pct-zinc-1pct-30ml.png?sw=1200&sh=1200&sm=fit",
-        img2 : "https://theordinary.com/dw/image/v2/BFKJ_PRD/on/demandware.static/-/Sites-deciem-master/default/dwce7b3754/Images/products/The%20Ordinary/lifestyle/rdn-niacinamide-10pct-zinc-1pct-30ml-lifestyle.jpg?sw=1200&sh=1200&sm=fit",
-        img3 : "https://theordinary.com/dw/image/v2/BFKJ_PRD/on/demandware.static/-/Sites-deciem-master/default/dw612d8b1f/Images/products/The%20Ordinary/swatch/rdn-niacinamide-10pct-zinc-1pct-texture.jpg?sw=800&sh=800&sm=fit",
-        img4 : "https://theordinary.com/dw/image/v2/BFKJ_PRD/on/demandware.static/-/Sites-deciem-master/default/dw362eec6e/Images/products/The%20Ordinary/cover-image/rdn-niacinamide-10pct-zinc-1pct-application.jpg?sw=1200&sh=1200&sm=fit"
+        img1 : urlFor(product.images[0]).url(),
+        img2 : urlFor(product.images[1]).url(),
+        img3 : urlFor(product.images[2]).url(),
+        img4 : urlFor(product.images[3]).url()
     })
 
     const [activeImg, setActiveImage] = useState(images.img1)
@@ -20,7 +26,7 @@ export const ProductDisplay = () => {
     const [amount, setAmount] = useState(number);
     
   return (
-    <div className='flex flex-col px-10 lg:flex-row gap-20'>
+    <div className='flex flex-col  lg:flex-row gap-20'>
             <div className='flex flex-col gap-6 mx-auto'>
                 <Image src={activeImg} alt="a" width={300} height={300} className='w-[400px] h-[300px]  object-cover rounded-xl border mt-10 lg:mx-0'/>
                 <div className='flex flex-row space-x-2  sm:space-x-5 pt-16 mx-auto lg:mx-0'>
@@ -33,20 +39,20 @@ export const ProductDisplay = () => {
             {/* ABOUT */}
             <div className='flex flex-col gap-y-1 lg:w-2/4 mt-10 '>
                 <div>
-                    <span className=' text-primary font-semibold'>Beauty & Health</span>
-                    <h1 className='text-xl md:text-3xl font-bold'>The Ordinary Niacinamide 10% + Zinc 1% - 30ml</h1>
+                    <span className=' text-primary font-semibold'>{product.categories}</span>
+                    <h1 className='text-xl md:text-2xl font-bold'>{product.name}</h1>
                 </div>
                 <div className='space-y-2 text-sm pt-2'>
                     <p className='tracking-tighter text-sm text-muted-foreground'><span className='font-medium text-black'>AVAILABILITY</span> : ✅ In Stock</p>
-                    <p className='tracking-tighter text-sm text-muted-foreground'><span className='font-medium text-black'>PRODUCT TYPE</span> : Skin Care Product</p>
+                    <p className='tracking-tighter text-sm text-muted-foreground'><span className='font-medium text-black'>PRODUCT TYPE</span> : {product.categories}</p>
                     <p className='tracking-tighter text-sm text-muted-foreground'><span className='font-medium text-black'>VENDOR</span> : RAAZAIN</p>
                 </div>
-                <p className='text-gray-700 '>
-                A universal serum for blemish-prone skin that smooths, brightens, and supports. Niacinamide (Vitamin B3) is indicated to reduce the appearance of skin...
+                <p className='text-gray-700 line-clamp-3'>
+                {product.description}
                 </p>
                 <div className='flex flex-row items-center gap-5 pt-2'>
-                <h6 className='text-2xl font-semibold text-primary'>Dhs. 28.00</h6>
-                <h6 className='line-through'>Dhs. 48.00</h6>
+                <h6 className='text-2xl font-semibold text-primary'>Dhs. {product.discount}</h6>
+                <h6 className='line-through'>Dhs. {product.price}</h6>
                 </div>
                 <div className='flex flex-col gap-x-12 gap-y-5'>
                     <div className='flex flex-row items-center'>

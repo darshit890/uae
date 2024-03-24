@@ -10,7 +10,7 @@ export default function Navbar() {
   
   return (
     <Nav  maxWidth='xl' isBordered isBlurred={false} >
-      <NavbarContent className="flex pr-3" justify="start">
+      <NavbarContent className="flex " justify="start">
         <NavbarBrand>
         <Link color="foreground" href="/">
             <Image 

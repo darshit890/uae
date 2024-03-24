@@ -1,7 +1,7 @@
-import BreadCrumbs from './_component/BreadCrumbs'
-import { ProductDisplay } from './_component/ProductDisplay'
-import { ProductDescription } from './_component/ProductDescription'
-import { CommenSection } from './_component/CommenSection'
+import BreadCrumbs from '../[slug]/_component/BreadCrumbs'
+import { ProductDisplay } from '../[slug]/_component/ProductDisplay'
+import { ProductDescription } from '../[slug]/_component/ProductDescription'
+import { CommenSection } from '../[slug]/_component/CommenSection'
 
 const ProductPage = () => {
 

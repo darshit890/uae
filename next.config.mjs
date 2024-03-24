@@ -7,6 +7,9 @@ const nextConfig = {
             },
             {
                 "hostname": "www.raazain.com",
+            },
+            {
+                "hostname": "cdn.sanity.io",
             }
         ]
     }

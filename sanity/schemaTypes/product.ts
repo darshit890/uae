@@ -1,49 +1,76 @@
-export default {
-    name: 'product',
-    type: 'document',
-    title: 'Product',
+import { defineField, defineType } from "sanity";
+
+export const product = defineType({
+    name: "product",
+    title: "Products",
+    type: "document",
     fields: [
+        defineField({
+            name: "name",
+            title: "Name",
+            type: "string",
+        }),
         {
-            name: 'name',
-            type: 'string',
-            title: 'Name of Product',
-        },
-        {
-            name: 'images',
-            type: 'array',
-            title: 'Product Images',
-            of: [{type: 'image'}],
-        },
-        {
-            name: 'description',
-            type: 'text',
-            title: 'Description of product',
-        },
-        {
-            name: 'slug',
-            type: 'slug',
-            title: 'Product Slug',
+            name: "slug",
+            title: "Slug",
+            type: "slug",
             options: {
-                source: 'name',
+                source: "name",
             },
         },
         {
-            name: 'price',
-            title: 'Price',
-            type: 'number',
+            name: "images",
+            title: "Images",
+            type: "array",
+            of: [{ type: 'image'}]
         },
         {
-            name: 'discount',
-            title: 'Discount',
-            type: 'number',
+            name: "categories",
+            title: "Categories",
+            type: "array",
+            of: [{ type: "string"}]
         },
         {
-            name: 'category',
-            title: 'Product Category',
-            type: 'reference',
-            to: {
-                type: 'category',
-            },
+            name: "sizes",
+            title: "Sizes",
+            type: "array",
+            of: [{ type: "string"}]
         },
+        {
+            name: "colors",
+            title: "Colors",
+            type: "array",
+            of: [{ type: "string"}]
+        },
+        {
+            name: "description",
+            title: "Description",
+            type: "array",
+            of: [{ type: "string"}]
+        },
+        {
+            name: "sku",
+            title: "Sku",
+            type: "string",
+        },
+        {
+            name: "price",
+            title: "Price",
+            type: "array",
+            of: [{ type: "string"}]
+        },
+        {
+            name: "discount",
+            title: "Discount",
+            type: "array",
+            of: [{ type: "string"}]
+        },
+        {
+            name: "offer",
+            title: "Offer",
+            type: "array",
+            of: [{ type: "string"}]
+        },
+
     ],
-}
+})
