@@ -2,7 +2,7 @@ import BreadCrumbs from './_component/BreadCrumbs'
 import { ProductDisplay } from './_component/ProductDisplay'
 import { ProductDescription } from './_component/ProductDescription'
 import { CommenSection } from './_component/CommenSection'
-import { client } from '../lib/sanity'
+import { client } from '@/app/lib/sanity'
 import { SanityProduct } from '@/lib/inventory'
 import { groq } from 'next-sanity'
 

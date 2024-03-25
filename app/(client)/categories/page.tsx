@@ -1,4 +1,4 @@
-import { client } from '../lib/sanity';
+import { client } from '@/app/lib/sanity';
 import { SanityProduct } from '@/lib/inventory';
 import { groq } from 'next-sanity';
 import { ProductFilters } from "@/components/productfilters";
