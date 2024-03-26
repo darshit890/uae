@@ -71,11 +71,7 @@ export const product = defineType({
             type: "array",
             of: [{ type: "string"}]
         },
-        {
-            title: "Video file",
-            name: "video",
-            type: "mux.video"
-        }
+        
 
     ],
 })
