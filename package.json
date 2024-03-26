@@ -45,6 +45,6 @@
     "typescript": "^5"
   },
   "peerDependencies": {
-    "styled-components": "^6.1.8"
+    "styled-components": "^5.2"
   }
 }
