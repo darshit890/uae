@@ -2,12 +2,13 @@
 
 import Image from "next/image"
 import Link from "next/link"
-import { XCircle } from "lucide-react"
+import { Heart, ShoppingBagIcon, XCircle } from "lucide-react"
 import { urlFor } from "@/app/lib/sanity"
 
 import { SanityProduct } from "@/lib/inventory"
 import { shimmer, toBase64 } from "@/lib/image"
 import { Card, CardContent } from "./ui/card"
+import { Button } from "./ui/button"
 
 interface Props {
     products: SanityProduct[]
@@ -28,9 +29,9 @@ export function ProductGrid({ products }: Props) {
   }
 
   return (
-    <div className="grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-3 lg:col-span-3 lg:gap-x-8 ">
+    <div className="grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 md:grid-cols-3  lg:col-span-3 lg:gap-x-8 mt-10">
       {products.map((product) => (
-        <Link key={"key"} href={`/${product.slug}`} className="group text-sm">
+        <Link key={"key"} href={`/${product.slug}`} className="group text-sm mx-auto">
         <Card className="w-[230px] h-[340px]">
           <CardContent>
             <div className="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg ">
@@ -41,6 +42,16 @@ export function ProductGrid({ products }: Props) {
                 height={280}
                 className="h-full w-full object-cover object-center"
                 />
+            </div>
+            <div className='absolute top-2 left-1 '>
+              <Button variant='outline' size='icon'>
+                <Heart className='text-primary' />
+              </Button>
+            </div>
+            <div className='absolute top-2 right-1'>
+              <Button variant='outline' size='icon'>
+                <ShoppingBagIcon className='text-primary' />
+              </Button>
             </div>
           </CardContent>
           <h3 className="text-xs text-muted-foreground mt-4 font-medium px-6">{product.name}</h3>

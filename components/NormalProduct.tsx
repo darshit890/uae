@@ -2,6 +2,8 @@ import { COSRX, LaRoche, OTWO, Ordinary} from '@/utils/constant'
 import { Card, CardFooter, CardHeader } from '@nextui-org/react'
 import Image from 'next/image'
 import React from 'react'
+import { Button } from './ui/button'
+import { Heart, ShoppingBagIcon } from 'lucide-react'
 
 export const NormalProduct = () => {
   return (
@@ -12,9 +14,19 @@ export const NormalProduct = () => {
               {LaRoche.map((sp) => (
                 <Card key={sp.title} className='flex justify-between cursor-pointer'>
                   <CardHeader>
-                    <Image width={300} height={300} src={sp.src} alt='product'  />
+                    <Image className='pb-5' width={300} height={300} src={sp.src} alt='product' />
+                    <div className='absolute bottom-28 right-12'>
+                      <Button variant='outline' size='icon'>
+                        <Heart className='text-primary' />
+                      </Button>
+                    </div>
+                    <div className='absolute bottom-28 right-1'>
+                      <Button variant='outline' size='icon'>
+                        <ShoppingBagIcon className='text-primary' />
+                      </Button>
+                    </div>
                   </CardHeader>
-                  <CardFooter className='flex flex-col items-start space-y-1'>
+                  <CardFooter className='flex flex-col items-start space-y-1 '>
                     <h1 className='text-sm'>{sp.title}</h1>
                     <p className='text-primary font-medium'>Dhs. {sp.price}</p>
                     <div className='flex flex-row  items-center'>
@@ -33,7 +45,17 @@ export const NormalProduct = () => {
               {Ordinary.map((sp) => (
                 <Card key={sp.title} className='flex justify-between cursor-pointer'>
                   <CardHeader>
-                    <Image width={300} height={300} src={sp.src} alt='product'/>
+                    <Image width={300} height={300} src={sp.src} alt='product' className='pb-5'/>
+                    <div className='absolute bottom-28 right-12'>
+                      <Button variant='outline' size='icon'>
+                          <Heart className='text-primary' />
+                      </Button>
+                      </div>
+                      <div className='absolute bottom-28 right-1'>
+                      <Button variant='outline' size='icon'>
+                          <ShoppingBagIcon className='text-primary' />
+                      </Button>
+                    </div>
                   </CardHeader>
                   <CardFooter className='flex flex-col items-start space-y-1'>
                     <h1 className='text-sm'>{sp.title}</h1>
@@ -54,7 +76,17 @@ export const NormalProduct = () => {
               {OTWO.map((sp) => (
                 <Card key={sp.title} className='flex justify-between cursor-pointer'>
                   <CardHeader>
-                    <Image height={300} width={300} src={sp.src} alt='product'/>
+                    <Image height={300} width={300} src={sp.src} alt='product' className='pb-5'/>
+                    <div className='absolute bottom-28 right-12'>
+                      <Button variant='outline' size='icon'>
+                        <Heart className='text-primary' />
+                      </Button>
+                    </div>
+                    <div className='absolute bottom-28 right-1'>
+                      <Button variant='outline' size='icon'>
+                        <ShoppingBagIcon className='text-primary' />
+                      </Button>
+                    </div>
                   </CardHeader>
                   <CardFooter className='flex flex-col items-start space-y-1'>
                     <h1 className='text-sm'>{sp.title}</h1>
@@ -70,7 +102,17 @@ export const NormalProduct = () => {
               {COSRX.map((sp) => (
                 <Card key={sp.title} className='flex justify-between cursor-pointer'>
                   <CardHeader>
-                    <Image height={300} width={300} src={sp.src} alt='product'  />
+                    <Image height={300} width={300} src={sp.src} alt='product' className='pb-5' />
+                    <div className='absolute bottom-28 right-12'>
+                      <Button variant='outline' size='icon'>
+                        <Heart className='text-primary' />
+                      </Button>
+                    </div>
+                    <div className='absolute bottom-28 right-1'>
+                      <Button variant='outline' size='icon'>
+                        <ShoppingBagIcon className='text-primary' />
+                      </Button>
+                    </div>
                   </CardHeader>
                   <CardFooter className='flex flex-col items-start space-y-1'>
                     <h1 className='text-sm'>{sp.title}</h1>

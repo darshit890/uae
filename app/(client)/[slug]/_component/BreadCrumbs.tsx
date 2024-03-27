@@ -12,7 +12,7 @@ const BreadCrumbs = ({ product }: Props) => {
     <Breadcrumbs>
         <BreadcrumbItem color='primary'>Home</BreadcrumbItem>
         <BreadcrumbItem color='primary'>{product.categories}</BreadcrumbItem>
-        <BreadcrumbItem>{product.name}</BreadcrumbItem>
+        <BreadcrumbItem className='line-clamp-1'>{product.name}</BreadcrumbItem>
     </Breadcrumbs>
   )
 }

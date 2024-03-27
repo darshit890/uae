@@ -56,18 +56,32 @@ export const product = defineType({
         {
             name: "price",
             title: "Price",
-            type: "array",
-            of: [{ type: "string"}]
+            type: "number",
         },
         {
             name: "discount",
             title: "Discount",
-            type: "array",
-            of: [{ type: "string"}]
+            type: "number",
         },
         {
             name: "offer",
             title: "Offer",
+            type: "number",
+        },
+        {
+            name: "review",
+            title: "Review",
+            type: "number",
+        },
+        {
+            name: "shipping",
+            title: "Shipping",
+            type: "array",
+            of: [{ type: "string"}]
+        },
+        {
+            name: "rating",
+            title: "Rating",
             type: "array",
             of: [{ type: "string"}]
         },

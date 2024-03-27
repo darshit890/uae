@@ -6,6 +6,8 @@ import Image from "next/image";
 import React from "react";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "./ui/carousel";
 import { SCosmetics, SHome, Sbeauty } from "@/utils/constant";
+import { Button } from "./ui/button";
+import { Heart, ShoppingBagIcon } from "lucide-react";
 
 export function EmblaCarousel() {
     const [emblaRef] = useEmblaCarousel({ loop: true })
@@ -35,6 +37,16 @@ export const SpecialOffer = () => {
                             <Card key={sp.title} className='flex justify-between cursor-pointer items-stretch w-[250px] h-[400px]'>
                                 <CardHeader>
                                     <Image width={300} height={300} src={sp.src} alt='product'  />
+                                    <div className='absolute bottom-28 right-12'>
+                                        <Button variant='outline' size='icon'>
+                                            <Heart className='text-primary' />
+                                        </Button>
+                                        </div>
+                                        <div className='absolute bottom-28 right-1'>
+                                        <Button variant='outline' size='icon'>
+                                            <ShoppingBagIcon className='text-primary' />
+                                        </Button>
+                                        </div>
                                 </CardHeader>
                                 <CardFooter className='flex flex-col items-start space-y-1'>
                                     <h1 className='text-sm'>{sp.title}</h1>
@@ -68,6 +80,16 @@ export const SpecialOffer = () => {
                             <CardBody className="flex p-0 flex-col justify-between">
                                 <div className="flex justify-center">
                                 <Image width={300} height={300} src={sp.src} alt="Tax Innovation"/>
+                                <div className='absolute bottom-28 right-12'>
+                                <Button variant='outline' size='icon'>
+                                    <Heart className='text-primary' />
+                                </Button>
+                                </div>
+                                <div className='absolute bottom-28 right-1'>
+                                <Button variant='outline' size='icon'>
+                                    <ShoppingBagIcon className='text-primary' />
+                                </Button>
+                                </div>
                                 </div>
                                 <div>
                                 <p className="text-muted-foreground text-sm px-5 py-1 max-w-sm">{sp.title}</p>
@@ -99,15 +121,25 @@ export const SpecialOffer = () => {
                 >
                    <CarouselContent className="flex mx-auto ">
                     {SHome.map((sp, index) => (
-                        <CarouselItem key={index}  className="lg:basis-1/3 xl:basis-1/4">
+                        <CarouselItem key={index}  className="lg:basis-1/3 xl:basis-1/4  ">
                         <div className="p-1">
-                            <Card className="h-[450px] cursor-pointer mt-10 ">
-                            <CardBody className="flex  aspect-auto  p-0 flex-col justify-between">
-                                <div className="flex justify-center ">
+                            <Card className="h-[420px] cursor-pointer mt-10 ">
+                            <CardBody className="flex p-0 flex-col justify-between">
+                                <div className="flex justify-center">
                                 <Image width={300} height={300} src={sp.src} alt="Tax Innovation"/>
+                                <div className='absolute bottom-28 right-12'>
+                                    <Button variant='outline' size='icon'>
+                                        <Heart className='text-primary' />
+                                    </Button>
+                                    </div>
+                                    <div className='absolute bottom-28 right-1'>
+                                    <Button variant='outline' size='icon'>
+                                        <ShoppingBagIcon className='text-primary' />
+                                    </Button>
+                                    </div>
                                 </div>
                                 <div>
-                                <p className="text-muted-foreground text-sm px-5 py-1">{sp.title}</p>
+                                <p className="text-muted-foreground text-sm px-5 py-1 max-w-sm">{sp.title}</p>
                                 <h1 className="text-left px-5 font-medium text-primary">Dhs. {sp.price}</h1>
                                 <div className="flex flex-row items-center pb-6">
                                     {sp.cutoff ? 

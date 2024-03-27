@@ -3,6 +3,8 @@ import { TMakeup, tBeauty, tKitchen, tSkin } from '@/utils/constant'
 import { Tab, Tabs, Card, CardHeader, CardFooter } from '@nextui-org/react'
 import Image from 'next/image'
 import React from 'react'
+import { Button } from './ui/button'
+import { Heart, ShoppingBagIcon } from 'lucide-react'
 
 export const BestSellers = () => {
   return (
@@ -17,6 +19,16 @@ export const BestSellers = () => {
                         <Card key={sp.title} className='md:flex md:justify-between cursor-pointer'>
                         <CardHeader>
                           <Image width={300} height={300} src={sp.src} alt='product'/>
+                          <div className='absolute bottom-28 right-12'>
+                      <Button variant='outline' size='icon'>
+                        <Heart className='text-primary' />
+                      </Button>
+                    </div>
+                    <div className='absolute bottom-28 right-1'>
+                      <Button variant='outline' size='icon'>
+                        <ShoppingBagIcon className='text-primary' />
+                      </Button>
+                    </div>
                         </CardHeader>
                         <CardFooter className='flex flex-col items-start space-y-1 '>
                           <h1 className='text-sm'>{sp.title}</h1>
@@ -32,6 +44,16 @@ export const BestSellers = () => {
                         <Card key={sp.title} className='md:flex md:justify-between cursor-pointer'>
                         <CardHeader>
                           <Image width={300} height={300} src={sp.src} alt='product'/>
+                          <div className='absolute bottom-28 right-12'>
+                      <Button variant='outline' size='icon'>
+                        <Heart className='text-primary' />
+                      </Button>
+                    </div>
+                    <div className='absolute bottom-28 right-1'>
+                      <Button variant='outline' size='icon'>
+                        <ShoppingBagIcon className='text-primary' />
+                      </Button>
+                    </div>
                         </CardHeader>
                         <CardFooter className='flex flex-col items-start space-y-1'>
                           <h1 className='text-sm'>{sp.title}</h1>
@@ -47,6 +69,16 @@ export const BestSellers = () => {
                         <Card key={sp.title} className='md:flex md:justify-between cursor-pointer'>
                         <CardHeader>
                           <Image width={300} height={300} src={sp.src} alt='product'/>
+                          <div className='absolute bottom-28 right-12'>
+                      <Button variant='outline' size='icon'>
+                        <Heart className='text-primary' />
+                      </Button>
+                    </div>
+                    <div className='absolute bottom-28 right-1'>
+                      <Button variant='outline' size='icon'>
+                        <ShoppingBagIcon className='text-primary' />
+                      </Button>
+                    </div>
                         </CardHeader>
                         <CardFooter className='flex flex-col items-start space-y-1'>
                           <h1 className='text-sm'>{sp.title}</h1>
@@ -62,6 +94,16 @@ export const BestSellers = () => {
                         <Card key={sp.title} className='md:flex md:justify-between cursor-pointer'>
                         <CardHeader>
                           <Image width={300} height={300} src={sp.src} alt='product' />
+                          <div className='absolute top-2 left-1 '>
+                      <Button variant='outline' size='icon'>
+                        <Heart className='text-primary' />
+                      </Button>
+                    </div>
+                    <div className='absolute top-2 right-1'>
+                      <Button variant='outline' size='icon'>
+                        <ShoppingBagIcon className='text-primary' />
+                      </Button>
+                    </div>
                         </CardHeader>
                         <CardFooter className='flex flex-col items-start space-y-1'>
                           <h1 className='text-sm'>{sp.title}</h1>

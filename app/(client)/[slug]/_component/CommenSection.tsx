@@ -9,18 +9,18 @@ import { FaStar } from "react-icons/fa"
 export const CommenSection = () => {
   return (
     <>
-    <div className='my-20 pt-5 max-w-full border-t'>
-        <h1 className='font-medium text-3xl'><span className='font-semibold text-primary'>| </span>Product Ratings & Reviews</h1>
+    <div className='my-20 pt-5 max-w-full border-t '>
+        <h1 className='font-medium text-xl lg:text-2xl'><span className='font-semibold text-primary'>| </span>Product Ratings & Reviews</h1>
         <div className='flex flex-col lg:flex-row gap-x-10'>
-            <div className='flex flex-col pl-10 gap-y-5'>
-                <p className='text-2xl font-medium mt-10 '>Overall Rating</p>
+            <div className='flex flex-col pl-10 gap-y-5 mx-auto'>
+                <p className='text-2xl font-medium mt-10'>Overall Rating</p>
                 <div className="flex flex-row items-center space-x-1 gap-x-1">
                 <p className="text-xl font-medium">4.3</p>
                     {[...Array(5)].map(star => {
                         return <FaStar className="text-yellow-400" key={star} />
                     })}
                 </div>
-                <div className="flex flex-col space-y-5 w-[300px]">
+                <div className="flex flex-col space-y-5 w-[200px] sm:w-[600px] mx-auto lg:w-[300px]">
                     <div className="flex flex-row items-center space-x-2">
                     <p className="text-lg">5</p>
                     <FaStar className="text-yellow-400" />
@@ -51,7 +51,7 @@ export const CommenSection = () => {
                     </div>
                 </div>
             </div>
-            <div className="flex flex-col w-full mt-10 gap-y-3">
+            <div className="flex flex-col w-full mt-10 gap-y-3 mx-auto">
                 <Card>
                     <CardHeader>
                         <div className="flex flex-row">

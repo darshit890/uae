@@ -2,6 +2,8 @@ import { related } from '@/utils/constant'
 import { Card, CardFooter, CardHeader } from '@nextui-org/react'
 import React from 'react'
 import Image from 'next/image'
+import { Button } from './ui/button'
+import { Heart, ShoppingBagIcon } from 'lucide-react'
 
 export const RecentlyAdded = () => {
   return (
@@ -10,9 +12,19 @@ export const RecentlyAdded = () => {
             <h1 className='font-medium text-3xl text-gray-700 pb-2 tracking-tighter'>Recently Added</h1>
             <div className='grid lg:grid-cols-4 gap-y-8 xl:grid-cols-5 md:grid-cols-3 grid-cols-2  space-x-3 my-8 mx-auto md:mx-0 shrink'>
               {related.map((sp) => (
-                <Card key={sp.title} className='flex justify-between cursor-pointer'>
+                <Card key={sp.title} className='flex justify-between cursor-pointer relative'>
                   <CardHeader>
                     <Image width={300} height={300} src={sp.src} alt='product' />
+                    <div className='absolute bottom-28 right-12'>
+                      <Button variant='outline' size='icon'>
+                        <Heart className='text-primary' />
+                      </Button>
+                    </div>
+                    <div className='absolute bottom-28 right-1'>
+                      <Button variant='outline' size='icon'>
+                        <ShoppingBagIcon className='text-primary' />
+                      </Button>
+                    </div>
                   </CardHeader>
                   <CardFooter className='flex flex-col items-start space-y-1 '>
                     <h1 className='text-sm'>{sp.title}</h1>

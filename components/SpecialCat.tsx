@@ -14,6 +14,13 @@ export const LimitedOffer = () => {
             </div>
         ))}
       </div>
+      <div className='mt-20 mb-10'>
+        <h1 className='text-2xl font-medium text-gray-700'>Limited Offer</h1>
+      </div>
+      <div className='flex flex-row '>
+          <Image src='https://www.raazain.com/cdn/shop/files/pkg_1.png?v=1708608522' alt='' height={300} width={800} />
+          <Image src='https://www.raazain.com/cdn/shop/files/pkg_1.png?v=1708608522' alt='' height={300} width={800} />
+      </div>
     </section>
   )
 }

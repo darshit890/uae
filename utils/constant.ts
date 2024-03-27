@@ -650,3 +650,85 @@ export const OrdinaryT = [
         discount: -50,
     },
 ]
+
+export const marquee = [
+    {
+        title: 'Clarins Double Serum Complete Age Control Concentrate',
+        src: 'https://www.raazain.com/cdn/shop/files/CLARINS_1_300x_crop_center.png?v=1709661962',
+        href: '/',
+        price: 200.00,
+        cutoff: 295.00,
+        discount: -32,
+    },
+    {
+        title: 'Vaseline Intensive Care Cocoa Radiant Body Oil 200ml',
+        src: 'https://www.raazain.com/cdn/shop/files/cleangel_300x_crop_center.png?v=1706086093',
+        href: '/',
+        price: 35.00,
+        cutoff: 58.00,
+        discount: -40,
+    },
+    {
+        title: 'The Ordinary Salicylic Acid 2% Solution - 30ml',
+        src: 'https://www.raazain.com/cdn/shop/files/LoosePow_300x_crop_center.png?v=1707337526',
+        href: '/',
+        price: 25.00,
+    },
+    {
+        title: 'The Ordinary Salicylic Acid 2% Solution - 30ml',
+        src: 'https://www.raazain.com/cdn/shop/files/eyebrowcreme_300x_crop_center.png?v=1708370203',
+        href: '/',
+        price: 36.00,
+    },
+    {
+        title: 'The Ordinary Salicylic Acid 2% Solution - 30ml',
+        src: 'https://www.raazain.com/cdn/shop/files/Silksoft_7_300x_crop_center.png?v=1708020939',
+        href: '/',
+        price: 42.00,
+    },
+    {
+        title: 'The Ordinary Salicylic Acid 2% Masque - 50ml',
+        src: 'https://www.raazain.com/cdn/shop/files/masque_1_300x_crop_center.png?v=1705940587',
+        href: '/',
+        price: 40.00,
+        cutoff: 65.00,
+        discount: -38,
+    },
+    {
+        title: 'The Ordinary Ascorbic Acid 8% + Alpha Arbutin 2% - 30ml',
+        src: 'https://www.raazain.com/cdn/shop/files/ascorbicalpha_1_300x_crop_center.png?v=1705940492',
+        href: '/',
+        price: 28.00,
+        cutoff: 55.00,
+        discount: -49,
+    },
+    {
+        title: 'The Ordinary Hyaluronic Acid - 30ml',
+        src: 'https://www.raazain.com/cdn/shop/files/11363395-1414901836909521_300x_crop_center.jpg?v=1705940557',
+        href: '/',
+        price: 30.00,
+        cutoff: 60.00,
+        discount: -50,
+    },
+]
+
+export const calltoaction = [
+    {
+        src: 'https://www.raazain.com/cdn/shop/files/fast_delivery_5499f5fc-65f9-42dd-825c-10d19738c47c.jpg?v=1703454937)',
+        title: 'Fastest Delivery',
+        sub: 'Free Delivery over 100 AED',
+        button: 'All over U.A.E'
+    },
+    {
+        src: 'https://www.raazain.com/cdn/shop/files/RAMADAN_SALE.png?v=1706909576)',
+        title: '50% Offer',
+        sub: 'Special Ramzan Savings',
+        button: 'Buy Now'
+    },
+    {
+        src: 'https://www.raazain.com/cdn/shop/files/FS140x140.png?v=1708711241)',
+        title: 'Flash Sale Special',
+        sub: 'Check Out The Big Deals',
+        button: 'Shop Now'
+    }
+]
