@@ -27,7 +27,7 @@ export const ProductDescription = ({ product }: Props) => {
           </div>
       </div>
       <div className='pt-20 flex mx-auto'>
-        <Image src='/limited-offer/pkg_1.webp' className='rounded-lg' alt='fc' width={500} height={500} />
+        
       </div>
     </div>
   )

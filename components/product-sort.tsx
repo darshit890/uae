@@ -19,7 +19,6 @@ import {
   SheetTrigger,
 } from "@/components/ui/sheet"
 import { ProductFilters } from "@/components/productfilters"
-import { Button } from "./ui/button"
 
 const sortOptions = [
   { name: "Newest", value: "categories/?date=desc" },
@@ -51,12 +50,8 @@ export function ProductSort() {
           </SheetHeader>
           <ProductFilters />
         </SheetContent>
-        <SheetTrigger className="-m-2 ml-4 p-2  text-gray-400 hover:text-gray-500 sm:ml-6 lg:hidden">
-          <span className="sr-only">Filters</span>
-          
-          <Button>
-            <Filter className="h-5 w-5" aria-hidden="true" />
-          </Button>
+        <SheetTrigger className="ml-4 p-1 rounded-md lg:hidden flex bg-primary">
+            <Filter className="h-7 w-7 text-white lg:hidden flex bg-primary" />
         </SheetTrigger>
       </Sheet>
     </div>

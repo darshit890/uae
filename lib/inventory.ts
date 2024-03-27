@@ -24,4 +24,5 @@ export interface SanityProduct extends Omit<InventoryProduct, "images"> {
     off: number
     categories: string[]
     description: string
+    video: any
 }

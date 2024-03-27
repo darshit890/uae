@@ -30,7 +30,6 @@ export const RecentlyAdded = () => {
                     <h1 className='text-sm'>{sp.title}</h1>
                     <p className='text-primary font-medium'>Dhs. {sp.price}</p>
                     <div className='flex flex-row  items-center'>
-
                       <h1 className='line-through pr-1 text-sm'>Dhs. {sp.cutoff}</h1>
                       <p className='text-xs text-primary'>{sp.discount}% OFF</p>
                     </div>

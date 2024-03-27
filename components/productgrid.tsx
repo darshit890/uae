@@ -57,8 +57,8 @@ export function ProductGrid({ products }: Props) {
           <h3 className="text-xs text-muted-foreground mt-4 font-medium px-6">{product.name}</h3>
           <p className="mt-2 font-medium px-6 text-primary text-lg">Dhs.{product.discount}</p>
           <div className="flex flex-row gap-x-2 items-center">
-          <p className="mb-2 font-medium pl-6 line-through text-sm text-muted-foreground">Dhs.{product.price}</p>
-          <p className="mb-2 font-medium text-xs text-primary">{product.off}% OFF</p>
+            <h1 className="mb-2 font-medium pl-6 line-through text-sm text-muted-foreground">Dhs.{product.price}</h1>
+            <p className="mb-2 font-medium text-xs text-primary">{product.off}% OFF</p>
           </div>
         </Card>
         </Link>
