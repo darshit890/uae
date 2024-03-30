@@ -82,7 +82,10 @@ export const ProductDisplay = ({ product }: Props) => {
                 <div className='flex flex-row items-center gap-5 pt-2 mt-2'>
                 <h6 className='text-2xl font-semibold text-primary'>Dhs. {product.discount}</h6>
                 <h6 className='line-through'>Dhs. {product.price}</h6>
-                </div>
+              </div>
+              <div className='flex mt-6 space-x-3'>
+                  <div className='w-8 h-8 bg-blue-600 rounded-full cursor-pointer'></div>
+              </div>
                 <div className='flex flex-col gap-x-12 gap-y-5'>
                     <div className='flex flex-row items-center mt-2'>
                         <Button isIconOnly className='bg-gray-200 py-2 px-5 rounded-lg text-primary text-3xl' onClick={() => setAmount((prev) => prev - 1)}>-</Button>

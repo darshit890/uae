@@ -19,7 +19,8 @@ async function getData(slug: string) {
         off,
         "slug": slug.current,
         colors,
-        categories
+        categories,
+        youtubelink
         }`;
   
     const data = await client.fetch(query);

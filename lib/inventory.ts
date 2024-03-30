@@ -13,6 +13,7 @@ export interface InventoryProduct {
   off: number
   description: string
   sku: string
+  youtubelink: string
 }
 
 export interface SanityProduct extends Omit<InventoryProduct, "images"> {
@@ -24,5 +25,6 @@ export interface SanityProduct extends Omit<InventoryProduct, "images"> {
     off: number
     categories: string[]
     description: string
-    video: any
+    youtubelink: string
 }
+
