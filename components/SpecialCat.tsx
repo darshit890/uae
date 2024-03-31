@@ -26,6 +26,7 @@ export const LimitedOffer = () => {
       <div className='flex flex-col lg:flex-row  mx-auto justify-between gap-y-4 items-center px-5'>
           <Image src='https://www.raazain.com/cdn/shop/files/pkg_1.png?v=1708608522' alt='' height={300} width={550} />
           <CountdownTimer targetDate={targetDate}  />
+          <Image src='https://www.raazain.com/cdn/shop/files/pkg_1.png?v=1708608522' alt='' height={300} width={550} />
           <CountdownTimer targetDate={targetDate}  />
       </div>
     </section>
