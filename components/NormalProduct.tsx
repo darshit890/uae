@@ -4,6 +4,7 @@ import Image from 'next/image'
 import React from 'react'
 import { Button } from './ui/button'
 import { Heart, ShoppingBagIcon } from 'lucide-react'
+import { FaStar } from 'react-icons/fa'
 
 export const NormalProduct = () => {
   return (
@@ -26,13 +27,20 @@ export const NormalProduct = () => {
                       </Button>
                     </div>
                   </CardHeader>
-                  <CardFooter className='flex flex-col items-start space-y-1 '>
+                  <CardFooter className='flex flex-col items-start space-y-1 jusrify-between'>
                     <h1 className='text-sm'>{sp.title}</h1>
                     <p className='text-primary font-medium'>Dhs. {sp.price}</p>
-                    <div className='flex flex-row  items-center'>
-
-                      <h1 className='line-through pr-1 text-sm'>Dhs. {sp.cutoff}</h1>
-                      <p className='text-xs text-primary'>{sp.discount}% OFF</p>
+                    <div className='flex flex-row  items-center justify-between'>
+                      <div className='flex flex-row  items-center justify-between'>
+                        <div className='flex flex-row items-center'>
+                          <h1 className='line-through pr-1 text-sm'>Dhs. {sp.cutoff}</h1>
+                          <p className='text-xs text-primary'>{sp.discount}% OFF</p>
+                        </div>
+                        <div className='ml-16 flex items-center gap-x-1'>
+                          <p>{sp.rating}</p>
+                          <FaStar className='text-yellow-500' />
+                        </div>
+                      </div>
                     </div>
                   </CardFooter>
                 </Card>
@@ -60,10 +68,17 @@ export const NormalProduct = () => {
                   <CardFooter className='flex flex-col items-start space-y-1'>
                     <h1 className='text-sm'>{sp.title}</h1>
                     <p className='text-primary font-medium'>Dhs. {sp.price}</p>
-                    <div className='flex flex-row  items-center'>
-
-                      <h1 className='line-through pr-1 text-sm'>Dhs. {sp.cutoff}</h1>
-                      <p className='text-xs text-primary'>{sp.discount}% OFF</p>
+                    <div className='flex flex-row  items-center justify-between'>
+                      <div className='flex flex-row  items-center justify-between'>
+                        <div className='flex flex-row items-center'>
+                          <h1 className='line-through pr-1 text-sm'>Dhs. {sp.cutoff}</h1>
+                          <p className='text-xs text-primary'>{sp.discount}% OFF</p>
+                        </div>
+                        <div className='ml-16 flex items-center gap-x-1'>
+                          <p>{sp.rating}</p>
+                          <FaStar className='text-yellow-500' />
+                        </div>
+                      </div>
                     </div>
                   </CardFooter>
                 </Card>
@@ -91,6 +106,15 @@ export const NormalProduct = () => {
                   <CardFooter className='flex flex-col items-start space-y-1'>
                     <h1 className='text-sm'>{sp.title}</h1>
                     <p className='text-primary font-medium'>Dhs. {sp.price}</p>
+                    <div className='flex flex-row  items-center justify-between'>
+                      <div className='flex flex-row  items-center justify-between'>
+                        
+                        <div className='right-5 bottom-4 absolute flex items-center gap-x-1'>
+                          <p>{sp.rating}</p>
+                          <FaStar className='text-yellow-500' />
+                        </div>
+                      </div>
+                    </div>
                   </CardFooter>
                 </Card>
               ))}
@@ -117,6 +141,15 @@ export const NormalProduct = () => {
                   <CardFooter className='flex flex-col items-start space-y-1'>
                     <h1 className='text-sm'>{sp.title}</h1>
                     <p className='text-primary font-medium'>Dhs. {sp.price}</p>
+                    <div className='flex flex-row  items-center justify-between'>
+                      <div className='flex flex-row  items-center justify-between'>
+                        
+                        <div className='right-5 bottom-4 absolute flex items-center gap-x-1'>
+                          <p>{sp.rating}</p>
+                          <FaStar className='text-yellow-500' />
+                        </div>
+                      </div>
+                    </div>
                   </CardFooter>
                 </Card>
               ))}

@@ -54,6 +54,7 @@ export const Sbeauty = [
         price: 50.00,
         cutoff: 80.00,
         discount: -38,
+        rating: 4.5
     },
     {
         title: 'COSRX Hyaluronic Acid Hydra Power Essence 100ml',
@@ -62,6 +63,7 @@ export const Sbeauty = [
         price: 55.00,
         cutoff: 95.00,
         discount: -42,
+        rating: 4.5
     },
     {
         title: 'La-Roche Effaclar Serum Ultra Concentrated - 30ml',
@@ -70,6 +72,7 @@ export const Sbeauty = [
         price: 80.00,
         cutoff: 120.00,
         discount: -33,
+        rating: 4.5
     },
     {
         title: 'La-Roche Hyalu B5 Serum - 30ml',
@@ -78,6 +81,7 @@ export const Sbeauty = [
         price: 80.00,
         cutoff: 120.00,
         discount: -33,
+        rating: 4.5
     },
     {
         title: 'Clarins Double Serum Complete Age Control Concentrate',
@@ -86,6 +90,7 @@ export const Sbeauty = [
         price: 200.00,
         cutoff: 295.00,
         discount: -32,
+        rating: 4.5
     },
     {
         title: 'COSRX Advance Snail 96 Mucin Power Essence 100ml',
@@ -94,6 +99,7 @@ export const Sbeauty = [
         price: 66.00,
         cutoff: 100.00,
         discount: -34,
+        rating: 4.5
     },
     {
         title: 'The Ordinary Niacinamide 10% + Zinc 1% - 30ml',
@@ -102,6 +108,7 @@ export const Sbeauty = [
         price: 28.00,
         cutoff: 48.00,
         discount: -42,
+        rating: 4.5
     },
     {
         title: 'The Ordinary Hyaluronic Acid - 30ml',
@@ -110,6 +117,7 @@ export const Sbeauty = [
         price: 30.00,
         cutoff: 60.00,
         discount: -50,
+        rating: 4.5
     },
     {
         title: 'The Ordinary Ascorbic Acid 8% + Alpha Arbutin 2% - 30ml',
@@ -118,6 +126,7 @@ export const Sbeauty = [
         price: 28.00,
         cutoff: 55.00,
         discount: -49,
+        rating: 4.5
     },
     {
         title: 'La-Roche Effaclar Cleansing Gel - 400ml',
@@ -126,6 +135,7 @@ export const Sbeauty = [
         price: 80.00,
         cutoff: 125.00,
         discount: -36,
+        rating: 4.5
     },
 ]
 export const SCosmetics = [
@@ -134,6 +144,7 @@ export const SCosmetics = [
         src: 'https://www.raazain.com/cdn/shop/files/LiquidBlush_300x_crop_center.png?v=1708019377',
         href: '/',
         price: 32.00,
+        rating: 4.5
     },
     {
         title: 'O.TWO.O Ultra Stay Lollipop Matte Lipstick',
@@ -142,6 +153,7 @@ export const SCosmetics = [
         price: 30.00,
         cutoff: 65.00,
         discount: -54,
+        rating: 4.5
     },
     {
         title: 'O.TWO.O Gold Silk Satin Mascara',
@@ -150,48 +162,56 @@ export const SCosmetics = [
         price: 35.00,
         cutoff: 55.00,
         discount: -36,
+        rating: 4.5
     },
     {
         title: 'O.TWO.O Matte Liquid Lipstick',
         src: 'https://www.raazain.com/cdn/shop/files/MATTELIQLIP_300x_crop_center.png?v=1707768928',
         href: '/',
         price: 25.00,
+        rating: 4.5
     },
     {
         title: 'O.TWO.O Invisible Cover Foundation',
         src: 'https://www.raazain.com/cdn/shop/files/liquidfoundation_2_c71ddbbd-e104-45bb-a4a5-53ee1887809b_300x_crop_center.png?v=1707762293',
         href: '/',
         price: 40.00,
+        rating: 4.5
     },
     {
         title: 'O.TWO.O 3D Gold Mascara',
         src: 'https://www.raazain.com/cdn/shop/files/GoldMascara_3_300x_crop_center.png?v=1707760786',
         href: '/',
         price: 30.00,
+        rating: 4.5
     },
     {
         title: 'O.TWO.O Miracle 2 in 1 Black Mascara',
         src: 'https://www.raazain.com/cdn/shop/files/Miracle_300x_crop_center.png?v=1707421749',
         href: '/',
         price: 25.00,
+        rating: 4.5
     },
     {
         title: 'O.TWO.O Setting Loose Lowder',
         src: 'https://www.raazain.com/cdn/shop/files/Miracle_300x_crop_center.png?v=1707421749',
         href: '/',
         price: 25.00,
+        rating: 4.5
     },
     {
         title: 'O.TWO.O Waterproof Eyebrow Cream & Powder Gel',
         src: 'https://www.raazain.com/cdn/shop/files/eyebrowcreme_300x_crop_center.png?v=1708370203',
         href: '/',
         price: 36.00,
+        rating: 4.5
     },
     {
         title: 'O.TWO.O Silk Soft Makeup Powder',
         src: 'https://www.raazain.com/cdn/shop/files/Silksoft_7_300x_crop_center.png?v=1708020939',
         href: '/',
         price: 42.00,
+        rating: 4.5
     },
 ]
 export const SHome = [
@@ -202,6 +222,7 @@ export const SHome = [
         price: 90.00,
         cutoff: 140.00,
         discount: -36,
+        rating: 4.5
     },
     {
         title: 'Hexagon Base Levitating Flower Pot',
@@ -210,6 +231,7 @@ export const SHome = [
         price: 190.00,
         cutoff: 245.00,
         discount: -22,
+        rating: 4.5
     },
     {
         title: '3D Creative Crystal Ball Night Lamp',
@@ -218,6 +240,7 @@ export const SHome = [
         price: 40.00,
         cutoff: 68.00,
         discount: -12,
+        rating: 4.5
     },
     {
         title: '3D Liquid Sand Painting Decoration Dynamic Artwork Of Natural Landscape - 17.78 Cm',
@@ -226,6 +249,7 @@ export const SHome = [
         price: 50.00,
         cutoff: 75.00,
         discount: -33,
+        rating: 4.5
     },
     {
         title: 'Firefly Garden Lights for Path Landscape',
@@ -234,18 +258,21 @@ export const SHome = [
         price: 18.00,
         cutoff: 30.00,
         discount: -54,
+        rating: 4.5
     },
     {
         title: 'Square Base Levitating Flower Pot',
         src: 'https://www.raazain.com/cdn/shop/files/floatPotsqaure_300x_crop_center.png?v=1703707734',
         href: '/',
         price: 190.00,
+        rating: 4.5
     },
     {
         title: 'Circlo Levitating Switch Table Lamp',
         src: 'https://www.raazain.com/cdn/shop/files/lightcircilo_2_300x_crop_center.png?v=1703702043',
         href: '/',
         price: 225.00,
+        rating: 4.5
     },
     {
         title: 'Levitating Light Bulb',
@@ -254,6 +281,7 @@ export const SHome = [
         price: 195.00,
         cutoff: 368.00,
         discount: -47,
+        rating: 4.5
     },
     {
         title: 'Toothless & Light Fury on Car/Moto With Suction Clip & Cup',
@@ -262,18 +290,20 @@ export const SHome = [
         price: 80.00,
         cutoff: 161.00,
         discount: -50,
+        rating: 4.5
     },
     {
         title: '100 Pcs Glowing Pebbles, Glow in the Dark Stones, Glow Rocks Powered by Light or Solar',
         src: 'https://www.raazain.com/cdn/shop/files/WhatsAppImage2024-01-27at21.02.13_d1c2be48_300x_crop_center.jpg?v=1706376049',
         href: '/',
         price: 30.00,
+        rating: 4.5
     },
 ]
 
 
 
-export const related: { title: string; src: string; href: string; price: number; cutoff?: number; discount?: number} [] = [
+export const related: { title: string; src: string; href: string; price: number; cutoff?: number; discount?: number, rating: number} [] = [
     {
         title: 'Vaseline Intensive Care Cocoa Radiant Body Oil 200ml',
         src: 'https://www.raazain.com/cdn/shop/files/cleangel_300x_crop_center.png?v=1706086093',
@@ -281,6 +311,7 @@ export const related: { title: string; src: string; href: string; price: number;
         price: 35.00,
         cutoff: 58.00,
         discount: -40,
+        rating: 4.5
     },
     {
         title: 'Clarins Double Serum Complete Age Control Concentrate',
@@ -289,6 +320,7 @@ export const related: { title: string; src: string; href: string; price: number;
         price: 200.00,
         cutoff: 295.00,
         discount: -32,
+        rating: 4.5
     },
     {
         title: 'O.TWO.O Ultra Stay Lollipop Matte Lipstick',
@@ -297,12 +329,14 @@ export const related: { title: string; src: string; href: string; price: number;
         price: 30.00,
         cutoff: 65.00,
         discount: -54,
+        rating: 4.5
     },
     {
         title: 'O.TWO.O Silk Soft Makeup Powder',
         src: 'https://www.raazain.com/cdn/shop/files/Silksoft_7_300x_crop_center.png?v=1708020939',
         href: '/',
         price: 42.00,
+        rating: 4.5
     },
     {
         title: 'COSRX Advanced Snail 92 All in One Cream 100ml',
@@ -311,6 +345,7 @@ export const related: { title: string; src: string; href: string; price: number;
         price: 50.00,
         cutoff: 80.00,
         discount: -38,
+        rating: 4.5
     },
 ]
 
@@ -322,6 +357,7 @@ export const tSkin = [
         price: 5.00,
         cutoff: 9.00,
         discount: -44,
+        rating: 4.5
     },
     {
         title: "RAKO Whitening Men's Moisturizing Mask with Hyaluronic Acid - 40ml",
@@ -330,6 +366,7 @@ export const tSkin = [
         price: 5.00,
         cutoff: 9.00,
         discount: -44,
+        rating: 4.5
     },
     {
         title: 'Vaseline Intensive Care Cocoa Radiant Body Oil 200ml',
@@ -338,6 +375,7 @@ export const tSkin = [
         price: 35.00,
         cutoff: 58.00,
         discount: -40,
+        rating: 4.5
     },
     {
         title: 'Million Pauline Natural Moisture Honey Mask',
@@ -346,6 +384,7 @@ export const tSkin = [
         price: 5.00,
         cutoff: 9.00,
         discount: -44,
+        rating: 4.5
     },
     {
         title: 'Miss Myth Aloe Vera Soothing Gel Mask - 30ml',
@@ -354,6 +393,7 @@ export const tSkin = [
         price: 5.00,
         cutoff: 9.00,
         discount: -44,
+        rating: 4.5
     },
 ]
 export const tBeauty = [
@@ -364,6 +404,7 @@ export const tBeauty = [
         price: 200.00,
         cutoff: 295.00,
         discount: -32,
+        rating: 4.5
     },
     {
         title: 'COSRX Advanced Snail 92 All in One Cream 100ml',
@@ -372,6 +413,7 @@ export const tBeauty = [
         price: 50.00,
         cutoff: 80.00,
         discount: -38,
+        rating: 4.5
     },
     {
         title: 'The Ordinary Salicylic Acid 2% Masque - 50ml',
@@ -380,6 +422,7 @@ export const tBeauty = [
         price: 40.00,
         cutoff: 65.00,
         discount: -38,
+        rating: 4.5
     },
     {
         title: 'The Ordinary Ascorbic Acid 8% + Alpha Arbutin 2% - 30ml',
@@ -388,6 +431,7 @@ export const tBeauty = [
         price: 28.00,
         cutoff: 55.00,
         discount: -49,
+        rating: 4.5
     },
     {
         title: 'The Ordinary Hyaluronic Acid - 30ml',
@@ -396,6 +440,7 @@ export const tBeauty = [
         price: 30.00,
         cutoff: 60.00,
         discount: -50,
+        rating: 4.5
     },
 ]
 
@@ -405,30 +450,35 @@ export const TMakeup = [
         src: 'https://www.raazain.com/cdn/shop/files/clay_11_270x_crop_center.png?v=1703257109',
         href: '/',
         price: 65.00,
+        rating: 4.5
     },
     {
         title: 'Painless Exfoliation Magic Crystal Hair Remover',
         src: 'https://www.raazain.com/cdn/shop/files/HONEY_8_270x_crop_center.png?v=1703190765',
         href: '/',
         price: 30.00,
+        rating: 4.5
     },
     {
         title: 'Eyelash Curler Set, 14pcs/set Eyelash Curler Tool Set',
         src: 'https://www.raazain.com/cdn/shop/files/Untitleddesign_20_270x_crop_center.png?v=1705611890',
         href: '/',
         price: 25.00,
+        rating: 4.5
     },
     {
         title: 'Professional Push Down Liquid Pumping Empty Bottle Dispenser For Nail Polish And Makeup Remover - 2pcs 5.07oz',
         src: 'https://www.raazain.com/cdn/shop/files/Untitleddesign_19_270x_crop_center.png?v=1705610786',
         href: '/',
         price: 25.00,
+        rating: 4.5
     },
     {
         title: 'Volcanic Stone Oil Absorbing Stick',
         src: 'https://www.raazain.com/cdn/shop/files/Untitleddesign_7_a352bd10-3a76-4401-be44-7fd9a8f09cee_270x_crop_center.png?v=1705609406',
         href: '/',
         price: 20.00,
+        rating: 4.5
     },
 ]
 
@@ -440,6 +490,7 @@ export const LaRoche = [
         price: 80.00,
         cutoff: 120.00,
         discount: -33,
+        rating: 4.5
     },
     {
         title: 'Miss Myth Aloe Vera Soothing Gel Mask - 30ml',
@@ -448,6 +499,7 @@ export const LaRoche = [
         price: 80.00,
         cutoff: 125.00,
         discount: -36,
+        rating: 4.5
     },
     {
         title: 'Miss Myth Aloe Vera Soothing Gel Mask - 30ml',
@@ -456,6 +508,7 @@ export const LaRoche = [
         price: 90.00,
         cutoff: 125.00,
         discount: -28,
+        rating: 4.5
     },
     {
         title: 'Miss Myth Aloe Vera Soothing Gel Mask - 30ml',
@@ -464,6 +517,7 @@ export const LaRoche = [
         price: 90.00,
         cutoff: 125.00,
         discount: -28,
+        rating: 4.5
     },
     {
         title: 'Miss Myth Aloe Vera Soothing Gel Mask - 30ml',
@@ -472,6 +526,7 @@ export const LaRoche = [
         price: 90.00,
         cutoff: 125.00,
         discount: -28,
+        rating: 4.5
     },
 ]
 
@@ -481,12 +536,14 @@ export const tKitchen = [
         src: 'https://www.raazain.com/cdn/shop/files/HONEY_270x_crop_center.png?v=1703189847',
         href: '/',
         price: 30.00,
+        rating: 4.5
     },
     {
         title: 'Snack Bag Mini Sealer Bag Sealing Machine For Plastic Bags Food Snack Storage',
         src: 'https://www.raazain.com/cdn/shop/files/Untitleddesign_67c53760-3249-4fc4-a158-6bb19cbac8a0_270x_crop_center.png?v=1703148038',
         href: '/',
         price: 35.00,
+        rating: 4.5
     },
     {
         title: '2in1 Dumpling Maker, Creative Dumpling Maker',
@@ -495,12 +552,14 @@ export const tKitchen = [
         price: 25.00,
         cutoff: 48.00,
         discount: -48,
+        rating: 4.5
     },
     {
         title: 'Jannan Portable Gas Stove Single Burner With Carrying Case',
         src: 'https://www.raazain.com/cdn/shop/files/Untitleddesign_8_67c3fbe5-6fc8-44d7-9993-accc966ed562_270x_crop_center.png?v=1704725335',
         href: '/',
         price: 50.00,
+        rating: 4.5
     },
 
 ]
@@ -513,6 +572,7 @@ export const Ordinary = [
         price: 40.00,
         cutoff: 65.00,
         discount: -38,
+        rating: 4.5
     },
     {
         title: 'The Ordinary Ascorbic Acid 8% + Alpha Arbutin 2% - 30ml',
@@ -521,6 +581,7 @@ export const Ordinary = [
         price: 28.00,
         cutoff: 55.00,
         discount: -49,
+        rating: 4.5
     },
     {
         title: 'The Ordinary Hyaluronic Acid - 30ml',
@@ -529,6 +590,7 @@ export const Ordinary = [
         price: 30.00,
         cutoff: 60.00,
         discount: -50,
+        rating: 4.5
     },
     {
         title: 'The Ordinary Niacinamide 10% + Zinc 1% - 30ml ',
@@ -537,6 +599,7 @@ export const Ordinary = [
         price: 28.00,
         cutoff: 48.00,
         discount: -42,
+        rating: 4.5
     },
     {
         title: 'The Ordinary Vitamin C Suspension 30% In Silicone',
@@ -545,6 +608,7 @@ export const Ordinary = [
         price: 35.00,
         cutoff: 50.00,
         discount: -30,
+        rating: 4.5
     },
 ]
 
@@ -554,30 +618,35 @@ export const OTWO = [
         src: 'https://www.raazain.com/cdn/shop/files/LoosePow_300x_crop_center.png?v=1707337526',
         href: '/',
         price: 25.00,
+        rating: 4.5
     },
     {
         title: 'The Ordinary Salicylic Acid 2% Solution - 30ml',
         src: 'https://www.raazain.com/cdn/shop/files/eyebrowcreme_300x_crop_center.png?v=1708370203',
         href: '/',
         price: 36.00,
+        rating: 4.5
     },
     {
         title: 'The Ordinary Salicylic Acid 2% Solution - 30ml',
         src: 'https://www.raazain.com/cdn/shop/files/Silksoft_7_300x_crop_center.png?v=1708020939',
         href: '/',
         price: 42.00,
+        rating: 4.5
     },
     {
         title: 'The Ordinary Salicylic Acid 2% Solution - 30ml',
         src: 'https://www.raazain.com/cdn/shop/files/LiquidBlush_300x_crop_center.png?v=1708019377',
         href: '/',
         price: 32.00,
+        rating: 4.5
     },
     {
         title: 'The Ordinary Salicylic Acid 2% Solution - 30ml',
         src: 'https://www.raazain.com/cdn/shop/files/ULTRASTAY_5_300x_crop_center.png?v=1707941274',
         href: '/',
         price: 30.00,
+        rating: 4.5
     },
 ]
 
@@ -589,6 +658,7 @@ export const COSRX = [
         price: 55.00,
         cutoff: 95.00,
         discount: -42,
+        rating: 4.5
     },
     {
         title: 'COSRX Hyaluronic Acid Hydra Power Essence 100ml',
@@ -597,6 +667,7 @@ export const COSRX = [
         price: 55.00,
         cutoff: 95.00,
         discount: -42,
+        rating: 4.5
     },
     {
         title: 'COSRX Advanced Snail 92 All in One Cream 100ml',
@@ -605,6 +676,7 @@ export const COSRX = [
         price: 50.00,
         cutoff: 80.00,
         discount: -38,
+        rating: 4.5
     },
     {
         title: 'COSRX Advance Snail 96 Mucin Power Essence 100m',
@@ -613,6 +685,7 @@ export const COSRX = [
         price: 66.00,
         cutoff: 100.00,
         discount: -34,
+        rating: 4.5
     },
     {
         title: 'COSRX AHA/BHA Clarifying Treatment Toner',
@@ -621,6 +694,7 @@ export const COSRX = [
         price: 55.00,
         cutoff: 95.00,
         discount: -42,
+        rating: 4.5
     },
 ]
 
@@ -632,6 +706,7 @@ export const OrdinaryT = [
         price: 40.00,
         cutoff: 65.00,
         discount: -38,
+        rating: 4.5
     },
     {
         title: 'The Ordinary Ascorbic Acid 8% + Alpha Arbutin 2% - 30ml',
@@ -640,6 +715,7 @@ export const OrdinaryT = [
         price: 28.00,
         cutoff: 55.00,
         discount: -49,
+        rating: 4.5
     },
     {
         title: 'The Ordinary Hyaluronic Acid - 30ml',
@@ -648,6 +724,7 @@ export const OrdinaryT = [
         price: 30.00,
         cutoff: 60.00,
         discount: -50,
+        rating: 4.5
     },
 ]
 

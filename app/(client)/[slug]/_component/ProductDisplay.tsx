@@ -13,6 +13,8 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel"
+import { Star } from 'lucide-react'
+import { FaStar } from 'react-icons/fa'
 
 
 interface Props {
@@ -25,7 +27,7 @@ export const ProductDisplay = ({ product }: Props) => {
         img1 : urlFor(product.images[0]).url(),
         img2 : urlFor(product.images[1]).url(),
         img3 : urlFor(product.images[2]).url(),
-        img4 : urlFor(product.images[3]).url()
+        img4 : urlFor(product.images[3]).url(),
     })
 
     const [activeImg, setActiveImage] = useState(images.img1)
@@ -76,6 +78,9 @@ export const ProductDisplay = ({ product }: Props) => {
                     <p className='tracking-tighter text-sm text-muted-foreground'><span className='font-medium text-black'>PRODUCT TYPE</span> : {product.categories}</p>
                     <p className='tracking-tighter text-sm text-muted-foreground'><span className='font-medium text-black'>VENDOR</span> : RAAZAIN</p>
                 </div>
+                <div className='flex flex-row items-center gap-x-2'>
+                    <p>{product.review}</p> <FaStar className="text-yellow-400" /> <h4 className='text-muted-foreground'>({product.reviewno})</h4>
+                </div>
                 <p className='text-gray-700 line-clamp-3 mt-2'>
                 {product.description}
                 </p>
@@ -83,7 +88,7 @@ export const ProductDisplay = ({ product }: Props) => {
                 <h6 className='text-2xl font-semibold text-primary'>Dhs. {product.discount}</h6>
                 <h6 className='line-through'>Dhs. {product.price}</h6>
               </div>
-              <div className='flex mt-6 space-x-3'>
+              <div className='flex mt-2 space-x-3 flex-row'>
                   <div className='w-8 h-8 bg-blue-600 rounded-full cursor-pointer'></div>
               </div>
                 <div className='flex flex-col gap-x-12 gap-y-5'>

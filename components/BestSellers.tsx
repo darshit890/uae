@@ -5,6 +5,7 @@ import Image from 'next/image'
 import React from 'react'
 import { Button } from './ui/button'
 import { Heart, ShoppingBagIcon } from 'lucide-react'
+import { FaStar } from 'react-icons/fa'
 
 export const BestSellers = () => {
   return (
@@ -33,6 +34,15 @@ export const BestSellers = () => {
                         <CardFooter className='flex flex-col items-start space-y-1 '>
                           <h1 className='text-sm'>{sp.title}</h1>
                           <p className='text-primary font-medium'>Dhs. {sp.price}</p>
+                          <div className='flex flex-row  items-center justify-between'>
+                        <div className='flex flex-row  items-center justify-between'>
+                          
+                        <div className='right-5 bottom-4 absolute flex items-center gap-x-1'>
+                          <p>{sp.rating}</p>
+                          <FaStar className='text-yellow-500' />
+                        </div>
+                      </div>
+                    </div>
                         </CardFooter>
                       </Card>
                     ))}
@@ -58,6 +68,15 @@ export const BestSellers = () => {
                         <CardFooter className='flex flex-col items-start space-y-1'>
                           <h1 className='text-sm'>{sp.title}</h1>
                           <p className='text-primary font-medium'>Dhs. {sp.price}</p>
+                          <div className='flex flex-row  items-center justify-between'>
+                      <div className='flex flex-row  items-center justify-between'>
+                        
+                        <div className='right-5 bottom-4 absolute flex items-center gap-x-1'>
+                          <p>{sp.rating}</p>
+                          <FaStar className='text-yellow-500' />
+                        </div>
+                      </div>
+                    </div>
                         </CardFooter>
                       </Card>
                     ))}
@@ -83,6 +102,15 @@ export const BestSellers = () => {
                         <CardFooter className='flex flex-col items-start space-y-1'>
                           <h1 className='text-sm'>{sp.title}</h1>
                           <p className='text-primary font-medium'>Dhs. {sp.price}</p>
+                          <div className='flex flex-row  items-center justify-between'>
+                        <div className='flex flex-row  items-center justify-between'>
+                          
+                          <div className='right-5 bottom-4 absolute flex items-center gap-x-1'>
+                            <p>{sp.rating}</p>
+                            <FaStar className='text-yellow-500' />
+                          </div>
+                        </div>
+                      </div>
                         </CardFooter>
                       </Card>
                     ))}
@@ -108,6 +136,15 @@ export const BestSellers = () => {
                         <CardFooter className='flex flex-col items-start space-y-1'>
                           <h1 className='text-sm'>{sp.title}</h1>
                           <p className='text-primary font-medium'>Dhs. {sp.price}</p>
+                          <div className='flex flex-row  items-center justify-between'>
+                      <div className='flex flex-row  items-center justify-between'>
+                        
+                        <div className='right-5 bottom-4 absolute flex items-center gap-x-1'>
+                          <p>{sp.rating}</p>
+                          <FaStar className='text-yellow-500' />
+                        </div>
+                      </div>
+                    </div>
                         </CardFooter>
                       </Card>
                     ))}
@@ -116,7 +153,7 @@ export const BestSellers = () => {
                 </Tabs>
             </div>
         </div>
-        <div className='flex flex-col lg:flex-row gap-y-4 my-20  max-w-7xl mx-auto  gap-x-5 '>
+        <div className='flex flex-col lg:flex-row gap-y-4 my-20  max-w-7xl mx-auto  gap-x-5 items-center'>
           <Image height={300} width={620} className='cursor-pointer rounded-xl ' src='https://www.raazain.com/cdn/shop/files/Men_longwear_copy_cfaebf1e-00d4-4019-ba42-f7a207bde162.jpg?v=1702937400' alt='category' />
           <Image height={300} width={620} className='cursor-pointer rounded-xl' src='https:////www.raazain.com/cdn/shop/files/women_longwear_copy.jpg?v=1702937416' alt='category' />
         </div>

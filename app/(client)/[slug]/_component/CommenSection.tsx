@@ -2,11 +2,16 @@
 import Review from "@/components/Review"
 import { Button } from "@/components/ui/button"
 import { Card, CardDescription, CardFooter, CardHeader } from "@/components/ui/card"
+import { SanityProduct } from "@/lib/inventory"
 import { Progress } from "@nextui-org/react"
 import { User, Link } from "@nextui-org/react"
 import { FaStar } from "react-icons/fa"
 
-export const CommenSection = () => {
+interface Props {
+    product: SanityProduct
+  }
+
+export const CommenSection = ({ product }: Props) => {
   return (
     <>
     <div className='my-20 pt-5 max-w-full border-t '>
@@ -15,7 +20,7 @@ export const CommenSection = () => {
             <div className='flex flex-col pl-10 gap-y-5 mx-auto'>
                 <p className='text-2xl font-medium mt-10'>Overall Rating</p>
                 <div className="flex flex-row items-center space-x-1 gap-x-1">
-                <p className="text-xl font-medium">4.3</p>
+                <p className="text-xl font-medium">{product.review}</p>
                     {[...Array(5)].map(star => {
                         return <FaStar className="text-yellow-400" key={star} />
                     })}

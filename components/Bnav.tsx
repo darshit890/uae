@@ -57,7 +57,7 @@ export const Bnav = () => {
                 <Link href={'/contact'}>
                     Contact
                 </Link>
-                <Link href={'/faq'}>
+                <Link  href={'/faq'}>
                     FAQs
                 </Link>
                 </div>

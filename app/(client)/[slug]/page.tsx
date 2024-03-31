@@ -20,7 +20,9 @@ async function getData(slug: string) {
         "slug": slug.current,
         colors,
         categories,
-        youtubelink
+        youtubelink,
+        review,
+        reviewno
         }`;
   
     const data = await client.fetch(query);
@@ -41,7 +43,7 @@ const ProductPage = async ({
             <BreadCrumbs product={data} />
             <ProductDisplay product={data} />
             <ProductDescription product={data} />
-            <CommenSection />
+            <CommenSection product={data}/>
         </section>
     )
 }

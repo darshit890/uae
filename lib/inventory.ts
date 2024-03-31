@@ -14,6 +14,8 @@ export interface InventoryProduct {
   description: string
   sku: string
   youtubelink: string
+  review: number
+  reviewno: number
 }
 
 export interface SanityProduct extends Omit<InventoryProduct, "images"> {
@@ -26,5 +28,7 @@ export interface SanityProduct extends Omit<InventoryProduct, "images"> {
     categories: string[]
     description: string
     youtubelink: string
+    review: number
+    reviewno: number
 }
 

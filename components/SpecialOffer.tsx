@@ -8,6 +8,7 @@ import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious
 import { SCosmetics, SHome, Sbeauty } from "@/utils/constant";
 import { Button } from "./ui/button";
 import { Heart, ShoppingBagIcon } from "lucide-react";
+import { FaStar } from "react-icons/fa";
 
 export function EmblaCarousel() {
     const [emblaRef] = useEmblaCarousel({ loop: true })
@@ -51,11 +52,18 @@ export const SpecialOffer = () => {
                                 <CardFooter className='flex flex-col items-start space-y-1'>
                                     <h1 className='text-sm'>{sp.title}</h1>
                                     <p className='text-primary font-medium'>Dhs. {sp.price}</p>
-                                    <div className='flex flex-row  items-center'>
-
+                                    <div className='flex flex-row  items-center justify-between'>
+                                <div className='flex flex-row  items-center justify-between'>
+                                    <div className='flex flex-row items-center'>
                                     <h1 className='line-through pr-1 text-sm'>Dhs. {sp.cutoff}</h1>
                                     <p className='text-xs text-primary'>{sp.discount}% OFF</p>
                                     </div>
+                                    <div className='ml-16 flex items-center gap-x-1'>
+                                    <p>{sp.rating}</p>
+                                    <FaStar className='text-yellow-500' />
+                                    </div>
+                                </div>
+                                </div>
                                 </CardFooter>
                             </Card>
                         </div>
@@ -96,7 +104,14 @@ export const SpecialOffer = () => {
                                 <h1 className="text-left px-5 font-medium text-primary">Dhs. {sp.price}</h1>
                                 <div className="flex flex-row items-center pb-6">
                                     {sp.cutoff ? 
-                                    <><h1 className="line-through pl-5 pr-3 text-sm font-light">Dhs. {sp.cutoff}</h1><p className="text-primary">{sp.discount}% OFF</p></>
+                                    <>
+                                    <h1 className="line-through pl-5 pr-3 text-sm font-light">Dhs. {sp.cutoff}</h1>
+                                    <p className="text-primary">{sp.discount}% OFF</p>
+                                    <div className="ml-16 flex flex-row items-center gap-x-1">
+                                        <h1>{sp.rating}</h1>
+                                        <FaStar className="text-yellow-500" />
+                                    </div>
+                                    </>
                                     : <div className="hidden">
 
                                     </div>
@@ -143,7 +158,14 @@ export const SpecialOffer = () => {
                                 <h1 className="text-left px-5 font-medium text-primary">Dhs. {sp.price}</h1>
                                 <div className="flex flex-row items-center pb-6">
                                     {sp.cutoff ? 
-                                    <><h1 className="line-through pl-5 pr-3 text-sm font-light">Dhs. {sp.cutoff}</h1><p className="text-primary">{sp.discount}% OFF</p></>
+                                    <>
+                                    <h1 className="line-through pl-5 pr-3 text-sm font-light">Dhs. {sp.cutoff}</h1>
+                                    <p className="text-primary">{sp.discount}% OFF</p>
+                                    <div className="ml-16 flex flex-row items-center gap-x-1">
+                                        <h1>{sp.rating}</h1>
+                                        <FaStar className="text-yellow-500" />
+                                    </div>
+                                    </>
                                     : <div className="hidden">
 
                                     </div>

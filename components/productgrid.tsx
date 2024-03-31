@@ -9,6 +9,7 @@ import { SanityProduct } from "@/lib/inventory"
 import { shimmer, toBase64 } from "@/lib/image"
 import { Card, CardContent } from "./ui/card"
 import { Button } from "./ui/button"
+import { FaStar } from "react-icons/fa"
 
 interface Props {
     products: SanityProduct[]
@@ -29,10 +30,10 @@ export function ProductGrid({ products }: Props) {
   }
 
   return (
-    <div className="grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 md:grid-cols-3  lg:col-span-3 lg:gap-x-8 mt-10">
+    <div className="grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 md:grid-cols-3 lg:gap-x-8 mt-10">
       {products.map((product) => (
         <Link key={"key"} href={`/${product.slug}`} className="group text-sm mx-auto">
-        <Card className="w-[230px] h-[340px]">
+        <Card className="w-[230px] h-[320px]">
           <CardContent>
             <div className="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg ">
                 <Image
@@ -43,22 +44,18 @@ export function ProductGrid({ products }: Props) {
                 className="h-full w-full object-cover object-center"
                 />
             </div>
-            <div className='absolute top-2 left-1 '>
-              <Button variant='outline' size='icon'>
-                <Heart className='text-primary' />
-              </Button>
-            </div>
-            <div className='absolute top-2 right-1'>
-              <Button variant='outline' size='icon'>
-                <ShoppingBagIcon className='text-primary' />
-              </Button>
-            </div>
           </CardContent>
-          <h3 className="text-xs text-muted-foreground mt-4 font-medium px-6">{product.name}</h3>
+          <h3 className="text-xs text-muted-foreground mt-4 font-medium px-6 line-clamp-2">{product.name}</h3>
           <p className="mt-2 font-medium px-6 text-primary text-lg">Dhs.{product.discount}</p>
-          <div className="flex flex-row gap-x-2 items-center">
-            <h1 className="mb-2 font-medium pl-6 line-through text-sm text-muted-foreground">Dhs.{product.price}</h1>
-            <p className="mb-2 font-medium text-xs text-primary">{product.off}% OFF</p>
+          <div className="flex flex-row gap-x-2 items-center justify-between">
+            <div className="flex flex-row items-center gap-x-2">
+              {product.price ? <><h1 className="mb-2 font-medium pl-6 line-through text-sm text-muted-foreground">Dhs.{product.price}</h1>
+              <p className="mb-2 font-medium text-xs text-primary">{product.off}% OFF</p></> : ""}
+              
+            </div>
+            <div className="flex flex-row items-center px-3 gap-x-1">
+              <h1>{product.review}</h1> {product.review ? <> <FaStar className="text-yellow-500" /> <p>({product.reviewno})</p> </> : ""}  
+            </div>
           </div>
         </Card>
         </Link>

@@ -77,6 +77,11 @@ export const product = defineType({
             type: "number",
         },
         {
+            name: "reviewno",
+            title: "Review Number",
+            type: "number",
+        },
+        {
             name: "shipping",
             title: "Shipping",
             type: "array",
@@ -91,6 +96,11 @@ export const product = defineType({
         {
             name: 'youtubelink',
             title: 'Youtube Link',
+            type: 'string'
+        },
+        {
+            name: 'brand',
+            title: 'Brand',
             type: 'string'
         }
     ],

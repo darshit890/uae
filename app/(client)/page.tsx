@@ -6,10 +6,12 @@ import { BestSellers } from "@/components/BestSellers";
 import { NormalProduct } from "@/components/NormalProduct";
 import { MarqueeComponent } from "@/components/Marquee";
 import { CallToAction } from "@/components/CallToAction";
+import NewsLetter from "@/components/Newsletter";
 
 export default function Home() {
   return (
     <>
+    <NewsLetter />
     <Hero />
     <MarqueeComponent />
     <LimitedOffer />

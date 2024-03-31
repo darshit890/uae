@@ -39,7 +39,9 @@ const FilterPage = async ({ searchParams }: Props) => {
     offer,
     "slug": slug.current,
     colors,
-    categories
+    categories,
+    review,
+    reviewno
   }`)
   console.log(products)
   return (
