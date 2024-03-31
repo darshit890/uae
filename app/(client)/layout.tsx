@@ -6,6 +6,7 @@ import Navbar from "@/components/Navbar";
 import { TNav } from "@/components/TNav";
 import Footer from "@/components/Footer";
 import { Bnav } from "@/components/Bnav";
+import { UserProvider } from "@auth0/nextjs-auth0/client";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -21,17 +22,19 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>
-        <Provider>
-          <div className="flex flex-col top-0 fixed z-50 items-center w-full">
-          <TNav />
-          <Navbar />
-          <Bnav />
-          </div>
-          <main className="border-b pt-[146px]">{children}</main>
-          <Footer />
-        </Provider>
-      </body>
+      <UserProvider>
+        <body className={inter.className}>
+          <Provider>
+            <div className="flex flex-col top-0 fixed z-50 items-center w-full">
+            <TNav />
+            <Navbar />
+            <Bnav />
+            </div>
+            <main className="border-b pt-[146px]">{children}</main>
+            <Footer />
+          </Provider>
+        </body>
+      </UserProvider>
     </html>
   );
 }
