@@ -23,7 +23,7 @@
     "clsx": "^2.1.0",
     "embla-carousel-autoplay": "^8.0.0",
     "embla-carousel-react": "^8.0.0",
-    "framer-motion": "^11.0.8",
+    "framer-motion": "^11.0.24",
     "image-url": "^1.1.0",
     "lucide-react": "^0.350.0",
     "next": "14.1.3",
