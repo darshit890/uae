@@ -4,9 +4,13 @@ import { Navbar as Nav, NavbarBrand, NavbarContent, NavbarItem, Link, Button } f
 import {Image} from "@nextui-org/react";
 import { Heart, ShoppingBag, User } from "lucide-react";
 import { Input } from "./ui/input";
-import { usePathname, useRouter, useSearchParams } from "next/navigation";
+import { useUser } from "@auth0/nextjs-auth0/client";
+import {Dropdown, DropdownTrigger, DropdownMenu, DropdownItem } from "@nextui-org/react";
 
 export default function Navbar() {
+  const { user, error, isLoading } = useUser();
+  if (error) return <div>{error.message}</div>;
+
   // const pathname = usePathname()
   // const router = useRouter()
   // const searchParams = useSearchParams()
@@ -43,9 +47,24 @@ export default function Navbar() {
     <NavbarItem className="sm:flex">
     </NavbarItem>
     <NavbarItem className="sm:flex">
-      <Button isIconOnly variant="flat" color="primary">
-        <User className="text-primary/50" />
-      </Button>
+    {user ? (
+      <Dropdown>
+            <Image
+              src={user.picture} 
+              alt=""
+              width={40}
+              height={40}
+              className="rounded-full"
+            />
+      </Dropdown>
+      ) : (
+      <Link href="/api/auth/login">
+        <Button variant="flat" color="primary">
+          Login
+          <User className="text-primary/50" />
+        </Button>
+      </Link>
+      )}
     </NavbarItem>
     <NavbarItem>
       <Button isIconOnly variant="flat" color="primary">
