@@ -79,7 +79,7 @@ export function ProductFilters() {
                       ([key, value]) => 
                         key === section.id && value === option.value
                     )}
-                    onClick={(event) => {
+                    onClick={(event: { currentTarget: { dataset: { state: string } } }) => {
                       const params = new URLSearchParams(SearchParams)
                       const checked = 
                         event.currentTarget.dataset.state === "checked"
