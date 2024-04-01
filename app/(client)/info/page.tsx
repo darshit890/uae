@@ -8,9 +8,6 @@ import React from 'react'
 const InfoPage = () => {
     const { user } = useUser()
 
-    if(!user) { 
-        return null
-    }
   return (
     <section className='max-w-7xl mx-auto my-20 px-10'>
         <div className='flex flex-col'>
