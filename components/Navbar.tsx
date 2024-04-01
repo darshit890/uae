@@ -7,18 +7,18 @@ import { Input } from "./ui/input";
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
 
 export default function Navbar() {
-  const pathname = usePathname()
-  const router = useRouter()
-  const searchParams = useSearchParams()
-  const defaultSearchQuery = searchParams.get('search') ?? ""
+  // const pathname = usePathname()
+  // const router = useRouter()
+  // const searchParams = useSearchParams()
+  // const defaultSearchQuery = searchParams.get('search') ?? ""
 
-  if(pathname.startsWith("/studio")) return null
+  // if(pathname.startsWith("/studio")) return null
 
   function onSubmit(event: React.SyntheticEvent<HTMLFormElement>) {
-    event.preventDefault()
-    const formData = new FormData(event.currentTarget)
-    const searchQuery = formData.get('search')
-    router.replace(`/categories/?search=${searchQuery}`)
+    // event.preventDefault()
+    // const formData = new FormData(event.currentTarget)
+    // const searchQuery = formData.get('search')
+    // router.replace(`/categories/?search=${searchQuery}`)
   }
   return (
     <Nav  maxWidth='xl' isBordered isBlurred={false} >
@@ -37,7 +37,7 @@ export default function Navbar() {
       <NavbarContent justify="end">
       <NavbarItem className="md:block hidden">
         <form onSubmit={onSubmit}>
-          <Input id="search" autoComplete="off" type='search' placeholder='Search' defaultValue={defaultSearchQuery}/>
+          <Input id="search" autoComplete="off" type='search' placeholder='Search' />
         </form>
     </NavbarItem>
     <NavbarItem className="sm:flex">
