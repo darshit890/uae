@@ -22,7 +22,8 @@ async function getData(slug: string) {
         categories,
         youtubelink,
         review,
-        reviewno
+        reviewno,
+        'variants' : variants[]
         }`;
   
     const data = await client.fetch(query);

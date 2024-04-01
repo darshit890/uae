@@ -1,7 +1,7 @@
 import React from "react";
 import { FaFacebook, FaInstagram, FaPinterest, FaTiktok } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
-import Image from "next/image";
+import {Image} from "@nextui-org/react";
 import Link from "next/link";
 import { FaXTwitter } from "react-icons/fa6";
 
@@ -12,12 +12,11 @@ function Footer() {
 			<div className=" h-1/2 w-full flex lg:flex-row flex-col justify-around items-start pt-20 pb-10 px-6 mx-auto">
 				<div className="py-5 ">
 					<ul>
-					<Image 
-						src={'/logo/logo-uae.jpg'}
-						alt="logo"
-						width={250}
-						height={250}
-						/>
+						<Image
+							width={300}
+							alt="NextUI hero Image"
+							src={'/logo/logo-uae.svg'}
+							/>
 						<div className="flex gap-5 pb-5 pl-8 pt-6">
 							<Link href={'https://www.instagram.com/raazain.store/'}>
 							  <FaInstagram className="text-2xl cursor-pointer hover:text-yellow-600" />

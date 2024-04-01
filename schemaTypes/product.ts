@@ -102,6 +102,22 @@ export const product = defineType({
             name: 'brand',
             title: 'Brand',
             type: 'string'
+        },
+        {
+            name: 'variants',
+            title: 'Varaints',
+            type: 'array',
+            of: [
+                {
+                    type: 'object',
+                    fields: [
+                        {name: 'size', type: 'array', of: [{ type: "string"}]},
+                        {name: 'color', type: 'array', of: [{ type: "string"}]},
+                        {name: 'image', type: 'array', of: [{ type: 'image'}]},
+                        {name: 'variant', type: 'array', of: [{ type: 'string'}]},
+                    ]
+                }
+            ]
         }
     ],
 })

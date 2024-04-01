@@ -16,6 +16,12 @@ export interface InventoryProduct {
   youtubelink: string
   review: number
   reviewno: number
+  variants: {
+    size: string;
+    color:string;
+    images: string[],
+    variant: string
+  }
 }
 
 export interface SanityProduct extends Omit<InventoryProduct, "images"> {
@@ -30,5 +36,12 @@ export interface SanityProduct extends Omit<InventoryProduct, "images"> {
     youtubelink: string
     review: number
     reviewno: number
+    variants: {
+      map(arg0: (variants: any, index: any) => import("react").JSX.Element): import("react").ReactNode | Iterable<import("react").ReactNode>
+      size: string;
+      color:string;
+      images: string[],
+      variant: string
+    }
 }
 

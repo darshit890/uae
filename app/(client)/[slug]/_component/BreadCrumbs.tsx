@@ -3,11 +3,11 @@ import { SanityProduct } from '@/lib/inventory'
 import { BreadcrumbItem, Breadcrumbs } from '@nextui-org/react'
 import React from 'react'
 
-interface Props {
+interface props {
   product: SanityProduct
 }
 
-const BreadCrumbs = ({ product }: Props) => {
+const BreadCrumbs = ({ product }: props) => {
   return (
     <Breadcrumbs>
         <BreadcrumbItem color='primary'>Home</BreadcrumbItem>

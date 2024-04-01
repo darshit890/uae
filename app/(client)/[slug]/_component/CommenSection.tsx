@@ -7,11 +7,11 @@ import { Progress } from "@nextui-org/react"
 import { User, Link } from "@nextui-org/react"
 import { FaStar } from "react-icons/fa"
 
-interface Props {
+interface props {
     product: SanityProduct
   }
 
-export const CommenSection = ({ product }: Props) => {
+export const CommenSection = ({ product }: props) => {
   return (
     <>
     <div className='my-20 pt-5 max-w-full border-t '>
@@ -67,7 +67,7 @@ export const CommenSection = ({ product }: Props) => {
                                   @jrgarciadev
                                 </Link>
                               )}
-                            avatarProps={{
+                            avatarprops={{
                                 src: "https://i.pravatar.cc/150?u=a04258114e29026702d"
                             }}
                             />
@@ -87,7 +87,7 @@ export const CommenSection = ({ product }: Props) => {
                                   @jrgarciadev
                                 </Link>
                               )}
-                            avatarProps={{
+                            avatarprops={{
                                 src: "https://i.pravatar.cc/150?u=a04258114e29026702d"
                             }}
                             />
@@ -107,7 +107,7 @@ export const CommenSection = ({ product }: Props) => {
                                   @jrgarciadev
                                 </Link>
                               )}
-                            avatarProps={{
+                            avatarprops={{
                                 src: "https://i.pravatar.cc/150?u=a04258114e29026702d"
                             }}
                             />

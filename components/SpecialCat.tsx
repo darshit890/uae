@@ -4,7 +4,7 @@ import React from 'react'
 import { Image } from '@nextui-org/react'
 import CountdownTimer from './CountdownTimer'
 
-interface YourComponentProps {
+interface YourComponentprops {
   className?: string;
 }
 
@@ -23,11 +23,10 @@ export const LimitedOffer = () => {
       <div className='mt-20 mb-10'>
         <h1 className='text-2xl font-medium text-gray-700 px-5'>Limited Offer</h1>
       </div>
-      <div className='flex flex-col lg:flex-row  mx-auto justify-between gap-y-4 items-center px-5'>
+      <div className='flex flex-col lg:flex-row  mx-auto justify-between gap-y-4 items-center px-5 '>
           <Image src='https://www.raazain.com/cdn/shop/files/pkg_1.png?v=1708608522' alt='' height={300} width={550} />
-          <CountdownTimer targetDate={targetDate}  />
+          {/* <CountdownTimer targetDate={targetDate}  />  */}
           <Image src='https://www.raazain.com/cdn/shop/files/pkg_1.png?v=1708608522' alt='' height={300} width={550} />
-          <CountdownTimer targetDate={targetDate}  />
       </div>
     </section>
   )

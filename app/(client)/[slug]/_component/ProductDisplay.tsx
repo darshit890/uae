@@ -5,7 +5,6 @@ import { Button } from '@nextui-org/react'
 import { OrdinaryT } from '@/utils/constant'
 import { SanityProduct } from '@/lib/inventory'
 import { urlFor } from '@/app/lib/sanity'
-import { Card, CardContent } from "@/components/ui/card"
 import {
   Carousel,
   CarouselContent,
@@ -17,11 +16,11 @@ import { Star } from 'lucide-react'
 import { FaStar } from 'react-icons/fa'
 
 
-interface Props {
+interface props {
     product: SanityProduct
   }
 
-export const ProductDisplay = ({ product }: Props) => {
+export const ProductDisplay = ({ product }: props) => {
 
     const [images, setImages] = useState({
         img1 : urlFor(product.images[0]).url(),
@@ -89,7 +88,18 @@ export const ProductDisplay = ({ product }: Props) => {
                 <h6 className='line-through'>Dhs. {product.price}</h6>
               </div>
               <div className='flex mt-2 space-x-3 flex-row'>
-                  <div className='w-8 h-8 bg-blue-600 rounded-full cursor-pointer'></div>
+                <ul>
+                  {product.variants.map((varain, index) => (
+                    <li key={index}>
+                    <h3>Variant {index + 1}</h3>
+                    {Object.entries(varain).map(([key, value]: [string, any]) => (
+  <p key={key}>
+    {key}: {Array.isArray(value) ? (value as string[]).join(', ') : value}
+  </p>
+))}
+                  </li>
+                  ))}
+                  </ul>
               </div>
                 <div className='flex flex-col gap-x-12 gap-y-5'>
                     <div className='flex flex-row items-center mt-2'>

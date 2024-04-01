@@ -11,11 +11,11 @@ import { Card, CardContent } from "./ui/card"
 import { Button } from "./ui/button"
 import { FaStar } from "react-icons/fa"
 
-interface Props {
+interface props {
     products: SanityProduct[]
 }
 
-export function ProductGrid({ products }: Props) {
+export function ProductGrid({ products }: props) {
   if (products.length === 0) {
     return (
       <div className="mx-auto grid h-40 w-full place-items-center rounded-md border-2 border-dashed bg-gray-50 py-10 text-center dark:bg-gray-900">

@@ -42,7 +42,7 @@ const CountdownTimer: React.FC<{ targetDate: Date }> = ({ targetDate }) => {
   const { days, hours, minutes, seconds } = timeLeft;
 
   return (
-    <div>
+    <section className='border-primary border p-3 rounded-3xl'>
       <div className='flex flex-col items-center'>
         <h1 className='text-2xl text-primary font-medium'>{days}</h1>
         <p className='text-gray-700 font-medium'>Days</p>
@@ -59,7 +59,7 @@ const CountdownTimer: React.FC<{ targetDate: Date }> = ({ targetDate }) => {
         <h1 className='text-2xl text-primary font-medium'>{seconds}</h1>
         <p className='text-gray-700 font-medium'>Seconds</p>
       </div>
-    </div>
+    </section>
   );
 };
 

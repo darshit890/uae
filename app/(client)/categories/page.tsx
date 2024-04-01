@@ -5,19 +5,20 @@ import { ProductFilters } from "@/components/productfilters";
 import { ProductGrid } from "@/components/productgrid";
 import { ProductSort } from '@/components/product-sort';
 
-interface Props {
+interface props {
   searchParams: {
     date?: string
     price?: string
     color?: string
     categories?: string
     size?: string
+    search?: string
   }
 }
 
-const FilterPage = async ({ searchParams }: Props) => {
+const FilterPage = async ({ searchParams }: props) => {
   console.log(searchParams)
-  const { color, date, price, categories, size } = searchParams
+  const { color, date, price, categories, size, search } = searchParams
   const priceOrder = price ? `| order(price ${price})` : ""
   const dateorder = date ? `| order(_createdAt ${date})` : ""
   const order = `${priceOrder}${dateorder}`
@@ -26,7 +27,8 @@ const FilterPage = async ({ searchParams }: Props) => {
   const colorFilter = color ? `&& "${color}" in colors` : ""
   const sizeFilter = size ? `&& "${size}" in sizes` : ""
   const categoryFilter = categories ? `&& "${categories}" in categories` : ""
-  const filter = `*[${productFilter}${colorFilter}${categoryFilter}${sizeFilter}]`
+  const searchFilter = search ? `&& name match "${search}"` : ""
+  const filter = `*[${productFilter}${colorFilter}${categoryFilter}${sizeFilter}${searchFilter}]`
   
   const products = await client.fetch<SanityProduct[]>(groq` ${filter} ${order} {
     _id,

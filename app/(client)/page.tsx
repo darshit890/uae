@@ -20,6 +20,7 @@ export default function Home() {
     <BestSellers />
     <NormalProduct />
     <CallToAction />
+    <div>hi</div>
     </>
   );
 }

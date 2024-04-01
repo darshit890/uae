@@ -3,11 +3,11 @@ import { SanityProduct } from "@/lib/inventory";
 import { Tabs, Tab } from "@nextui-org/react";
 import Image from "next/image";
 
-interface Props {
+interface props {
   product: SanityProduct;
 }
 
-export const ProductDescription = ({ product }: Props) => {
+export const ProductDescription = ({ product }: props) => {
   return (
     <div className="flex flex-col lg:flex-row mt-20  justify-between">
       <div className="flex flex-col justify-center">
