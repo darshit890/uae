@@ -49,6 +49,7 @@ export default function Navbar() {
     <NavbarItem className="sm:flex">
     {user ? (
       <Dropdown>
+        <DropdownTrigger>
             <Image
               src={user.picture} 
               alt=""
@@ -56,6 +57,15 @@ export default function Navbar() {
               height={40}
               className="rounded-full"
             />
+        </DropdownTrigger>
+        <DropdownMenu aria-label="Static Actions">
+        <DropdownItem key="new">My orders</DropdownItem>
+        <DropdownItem key="copy">Wishlist</DropdownItem>
+        <DropdownItem key="edit" href="/info">My info</DropdownItem>
+        <DropdownItem key="delete" className="text-danger" color="danger" href="/api/auth/logout">
+          Sign out
+        </DropdownItem>
+      </DropdownMenu>   
       </Dropdown>
       ) : (
       <Link href="/api/auth/login">
