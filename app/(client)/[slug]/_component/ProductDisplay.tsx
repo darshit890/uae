@@ -88,13 +88,15 @@ export const ProductDisplay = ({ product }: props) => {
                 </p>
                 <div className='flex flex-row items-center gap-5 pt-2 mt-2'>
                 <h6 className='text-2xl font-semibold text-primary'>Dhs. {discount}</h6>
-                <h6 className='line-through'>Dhs. {product.price}</h6>
+                <h6 className='line-through'>Dhs. {price}</h6>
               </div>
               <div className='flex mt-2 gap-x-3 flex-col gap-y-2'>
                 <div className='flex flex-row gap-x-2'>
                     {product.variants.map((index, sp) => (
-                        <Button onClick={() => setDiscount(index.discount)} variant='ghost' color='primary' key={sp}>{index.size}</Button>
-                    ))}
+                        <p onClick={() => setDiscount(index.discount)} color='primary' key={sp}>{index.size}</p>))}<div>
+                            {product.variants.map((index, sp) => (
+                        <Button onClick={() => setDiscount(index.discount)} variant='ghost' color='primary' key={sp}>{index.color}</Button>
+                            ))}</div>
                 </div>
               </div>
                 <div className='flex flex-col gap-x-12 gap-y-5'>

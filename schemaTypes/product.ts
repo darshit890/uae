@@ -112,10 +112,9 @@ export const product = defineType({
                     type: 'object',
                     fields: [
                         {name: 'size', type: 'array', of: [{ type: "string"}]},
-                        {name: 'color', type: 'array', of: [{ type: "string"}]},
+                        {name: 'color',title: 'Color or Material or Style', type: 'array', of: [{ type: "string"}]},
                         {name: 'price', type: 'array', of: [{ type: 'string'}]},
-                        {name: 'discount', type: 'string'},
-                        {name: 'percentage', type: 'string'},
+                        {name: 'discount', type: 'array', of: [{ type: 'string'}]},
                     ]
                 }
             ]
