@@ -1,11 +1,13 @@
 'use client'
 import React from "react";
-import { Navbar as Nav, NavbarBrand, NavbarContent, NavbarItem, Link, Button } from "@nextui-org/react";
+import { Navbar as Nav, NavbarBrand, NavbarContent, NavbarItem, Link } from "@nextui-org/react";
 import {Image} from "@nextui-org/react";
-import { Heart, ShoppingBag, User } from "lucide-react";
+import { Heart, User } from "lucide-react";
 import { Input } from "./ui/input";
 import { useUser } from "@auth0/nextjs-auth0/client";
 import {Dropdown, DropdownTrigger, DropdownMenu, DropdownItem } from "@nextui-org/react";
+import { CartSidebar } from '@/components/CartSidebar'
+import { Button } from "./ui/button";
 
 export default function Navbar() {
   const { user, error, isLoading } = useUser();
@@ -51,7 +53,7 @@ export default function Navbar() {
       <Dropdown>
         <DropdownTrigger>
             <Image
-              src={user.picture} 
+              src={user?.picture} 
               alt=""
               width={40}
               height={40}
@@ -69,20 +71,18 @@ export default function Navbar() {
       </Dropdown>
       ) : (
       <Link href="/api/auth/login">
-        <Button variant="flat" color="primary">
+        <Button  color="primary">
           Login
-          <User className="text-primary/50" />
+          <User className="text-white" />
         </Button>
       </Link>
       )}
     </NavbarItem>
     <NavbarItem>
-      <Button isIconOnly variant="flat" color="primary">
-      <ShoppingBag className="text-primary/50" />
-      </Button>
+      <CartSidebar />
     </NavbarItem>
-    <Button isIconOnly variant="flat" color="primary">
-        <Heart className="text-primary/50 h-5 w-5" />
+    <Button size='icon' color="primary">
+        <Heart className="text-white h-5 w-5" />
       </Button>
       </NavbarContent>
       

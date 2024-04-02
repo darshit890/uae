@@ -33,6 +33,9 @@ export const ProductDisplay = ({ product }: props) => {
 
     var number = 1;
 
+    const [discount, setDiscount] = useState(product.discount, )
+    const [price, setPrice] = useState(product.price)
+
     const [amount, setAmount] = useState(number);
     
   return (
@@ -84,22 +87,15 @@ export const ProductDisplay = ({ product }: props) => {
                 {product.description}
                 </p>
                 <div className='flex flex-row items-center gap-5 pt-2 mt-2'>
-                <h6 className='text-2xl font-semibold text-primary'>Dhs. {product.discount}</h6>
+                <h6 className='text-2xl font-semibold text-primary'>Dhs. {discount}</h6>
                 <h6 className='line-through'>Dhs. {product.price}</h6>
               </div>
-              <div className='flex mt-2 space-x-3 flex-row'>
-                <ul>
-                  {product.variants.map((varain, index) => (
-                    <li key={index}>
-                    <h3>Variant {index + 1}</h3>
-                    {Object.entries(varain).map(([key, value]: [string, any]) => (
-  <p key={key}>
-    {key}: {Array.isArray(value) ? (value as string[]).join(', ') : value}
-  </p>
-))}
-                  </li>
-                  ))}
-                  </ul>
+              <div className='flex mt-2 gap-x-3 flex-col gap-y-2'>
+                <div className='flex flex-row gap-x-2'>
+                    {product.variants.map((index, sp) => (
+                        <Button onClick={() => setDiscount(index.discount)} variant='ghost' color='primary' key={sp}>{index.size}</Button>
+                    ))}
+                </div>
               </div>
                 <div className='flex flex-col gap-x-12 gap-y-5'>
                     <div className='flex flex-row items-center mt-2'>
