@@ -53,7 +53,7 @@ export default function Navbar() {
       <Dropdown>
         <DropdownTrigger>
             <Image
-              src={user?.picture} 
+              src={user?.picture ?? undefined} 
               alt=""
               width={40}
               height={40}
