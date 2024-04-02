@@ -5,7 +5,8 @@ import Marquee from 'react-fast-marquee'
 
 export const MarqueeComponent = () => {
   return (
-    <section className='max-w-7xl mx-auto mb-20'>
+    <section className='max-w-7xl mx-auto mb-20 flex flex-row'>
+        <Image src='/Group-17418.png' alt='' width={200} height={100} />
     <Marquee>
         {marquee.map((section) => (
             <div key={section.title} className='flex flex-row cursor-pointer'>
