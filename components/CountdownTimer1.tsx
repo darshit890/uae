@@ -1,4 +1,7 @@
+'use client'
 import { useEffect, useState } from 'react';
+import dynamic from 'next/dynamic';
+import { Card, CardBody } from '@nextui-org/react';
 
 interface TimeLeft {
   days: number;
@@ -42,7 +45,9 @@ const CountdownTimer: React.FC<{ targetDate: Date }> = ({ targetDate }) => {
   const { days, hours, minutes, seconds } = timeLeft;
 
   return (
-    <section className='border-primary border p-3 rounded-3xl'>
+    <section className='border-primary p-3 flex flex-row justify-center'>
+      <Card>
+        <CardBody className='flex flex-row gap-x-10 '>
       <div className='flex flex-col items-center'>
         <h1 className='text-2xl text-primary font-medium'>{days}</h1>
         <p className='text-gray-700 font-medium'>Days</p>
@@ -59,8 +64,10 @@ const CountdownTimer: React.FC<{ targetDate: Date }> = ({ targetDate }) => {
         <h1 className='text-2xl text-primary font-medium'>{seconds}</h1>
         <p className='text-gray-700 font-medium'>Seconds</p>
       </div>
+      </CardBody>
+      </Card>
     </section>
   );
 };
 
-export default CountdownTimer;
+export default dynamic(() => Promise.resolve(CountdownTimer), {ssr: false})
