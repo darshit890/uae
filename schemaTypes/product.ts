@@ -37,15 +37,6 @@ export const product = defineType({
             of: [{ type: "string"}]
         },
         {
-            name: "colors",
-            title: "Colors",
-            type: "array",
-            of: [{ type: "string" }],
-            options: {
-                list: ["grey", "red", "blue", "green", "yellow", "pink", "purple", "orange", "brown", "white", "black"]
-            }
-        },
-        {
             name: "description",
             title: "Description",
             type: "array",
@@ -112,10 +103,9 @@ export const product = defineType({
                     type: 'object',
                     fields: [
                         {name: 'size', type: 'array', of: [{ type: "string"}]},
-                        {name: 'color', type: 'array', of: [{ type: "string"}]},
+                        {name: 'color',title: 'Color or Material or Style', type: 'array', of: [{ type: "string"}]},
                         {name: 'price', type: 'array', of: [{ type: 'string'}]},
-                        {name: 'discount', type: 'string'},
-                        {name: 'percentage', type: 'string'},
+                        {name: 'discount', type: 'array', of: [{ type: 'string'}]},
                     ]
                 }
             ]

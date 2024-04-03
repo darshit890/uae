@@ -29,7 +29,7 @@ export const ProductDescription = ({ product }: props) => {
             </Tab>
             <Tab key="music" title="Shipping & Returns">
               <p className="text-muted-foreground pl-10 max-w-4xl">
-                {product.description}
+                {product.shipping}
               </p>
             </Tab>
             <Tab key="videos" title="Reviews">

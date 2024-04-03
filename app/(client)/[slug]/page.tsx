@@ -13,6 +13,7 @@ async function getData(slug: string) {
         name,
         sku,
         images,
+        shipping,
         price,
         discount,
         description,

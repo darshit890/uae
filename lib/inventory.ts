@@ -12,6 +12,7 @@ export interface InventoryProduct {
   discound: number
   off: number
   description: string
+  shipping: string
   sku: string
   youtubelink: string
   review: number
@@ -34,6 +35,7 @@ export interface SanityProduct extends Omit<InventoryProduct, "images"> {
     categories: string[]
     description: string
     youtubelink: string
+    shipping: string
     review: number
     reviewno: number
     variants: {
