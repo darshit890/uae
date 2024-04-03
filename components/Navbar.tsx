@@ -8,6 +8,7 @@ import { useUser } from "@auth0/nextjs-auth0/client";
 import {Dropdown, DropdownTrigger, DropdownMenu, DropdownItem } from "@nextui-org/react";
 import { CartSidebar } from '@/components/CartSidebar'
 import { Button } from "./ui/button";
+import { WishlistSidebar } from "./WishlistSidebar";
 
 export default function Navbar() {
   const { user, error, isLoading } = useUser();
@@ -81,9 +82,10 @@ export default function Navbar() {
     <NavbarItem>
       <CartSidebar />
     </NavbarItem>
-    <Button size='icon' color="primary">
-        <Heart className="text-white h-5 w-5" />
-      </Button>
+    <NavbarItem>
+      <WishlistSidebar />
+    </NavbarItem>
+    
       </NavbarContent>
       
     </Nav>
