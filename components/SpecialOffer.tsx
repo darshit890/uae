@@ -1,7 +1,8 @@
 'use client'
 import Autoplay from "embla-carousel-autoplay";
 import useEmblaCarousel from "embla-carousel-react";
-import { Tab, Tabs, Card, CardBody, CardFooter, CardHeader } from '@nextui-org/react'
+import { Card, CardBody, CardFooter, CardHeader } from '@nextui-org/react'
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import Image from "next/image";
 import React from "react";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "./ui/carousel";
@@ -21,9 +22,14 @@ export const SpecialOffer = () => {
       )
   return (
     <section className='mt-20 bg-primary rounded-md max-w-7xl mx-auto hidden lg:block'>
-        <div className="flex py-6 items-center rounded-lg flex-col bg-gradient-to-t from-[#ff1824] to-[#ee198e]">
-            <Tabs aria-label='options' color='primary' size='lg' className="md:max-w-xl max-w-md">
-                <Tab key="beauty" title={'Beauty/Health'} className="flex flex-row text-xs">
+        <div className="flex pb-6 items-center rounded-lg flex-col bg-gradient-to-t from-[#ff1824] to-[#ee198e]">
+        <Tabs defaultValue="beauty" className="">
+            <TabsList className="flex mx-auto ">
+                <TabsTrigger value="beauty">Beauty/Health</TabsTrigger>
+                <TabsTrigger value="cosmetics">O.Two.O</TabsTrigger>
+                <TabsTrigger value="home">Home Decor</TabsTrigger>
+            </TabsList>
+            <TabsContent value="beauty">
                 <Carousel
                     plugins={[plugin.current]}
                     className="xl:max-w-7xl lg:max-w-7xl px-10"
@@ -71,9 +77,9 @@ export const SpecialOffer = () => {
                     ))}
                     </CarouselContent>
                 </Carousel>
-                </Tab>
-                <Tab key="cosmetics" title={'O.Two.O'} className="flex flex-row text-xs">
-                <Carousel
+                </TabsContent>
+            <TabsContent value="cosmetics">
+            <Carousel
                     plugins={[plugin.current]}
                     className="xl:max-w-7xl lg:max-w-7xl px-10"
                     onMouseEnter={plugin.current.stop}
@@ -125,9 +131,9 @@ export const SpecialOffer = () => {
                     ))}
                     </CarouselContent>
                 </Carousel> 
-                </Tab>
-                <Tab key="home" title={'Home Decor'} className="flex flex-row text-xs">
-                <Carousel
+                </TabsContent>
+            <TabsContent value="home">
+            <Carousel
                     plugins={[plugin.current]}
                     className="xl:max-w-7xl lg:max-w-7xl px-10"
                     onMouseEnter={plugin.current.stop}
@@ -179,8 +185,9 @@ export const SpecialOffer = () => {
                     ))}
                     </CarouselContent>
                 </Carousel>
-                </Tab>
+                </TabsContent>
             </Tabs>
+
         </div>
     </section>
   )

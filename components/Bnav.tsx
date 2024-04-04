@@ -45,10 +45,13 @@ export const Bnav = () => {
                 <Link href={'/'}>
                     Home
                 </Link>
-                <Link href={'/'}>
+                <Link href={'/blog'}>
                     Blog
                 </Link>
-                <Link href={'/'}>
+                <Link href={'/categories'}>
+                    Categories
+                </Link>
+                <Link href={'/flash-sale'}>
                     Flash Sale
                 </Link>
                 <Link href={'/about'}>

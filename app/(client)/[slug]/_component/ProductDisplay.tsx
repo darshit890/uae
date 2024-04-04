@@ -1,7 +1,7 @@
 'use client'
 import { useState } from 'react'
 import Image from 'next/image'
-import { Button } from '@nextui-org/react'
+import { Button } from '@/components/ui/button'
 import { OrdinaryT } from '@/utils/constant'
 import { SanityProduct } from '@/lib/inventory'
 import { urlFor } from '@/app/lib/sanity'
@@ -87,27 +87,29 @@ export const ProductDisplay = ({ product }: props) => {
                 {product.description}
                 </p>
                 <div className='flex flex-row items-center gap-5 pt-2 mt-2'>
-                <h6 className='text-2xl font-semibold text-primary'>Dhs. {discount}</h6>
-                <h6 className='line-through'>Dhs. {price}</h6>
+                <h6 className='text-2xl font-semibold text-primary'>Dhs. {discount ? discount : product.discount}</h6>
+                <h6 className='line-through'>Dhs. {price ? price : product.price}</h6>
               </div>
-              <div className='flex mt-2 gap-x-3 flex-col gap-y-2'>
+              <div className='flex mt-2 gap-x-3  gap-y-3 flex-col'>
                 <div className='flex flex-row gap-x-2'>
-                    {product.variants.map((index, sp) => (
-                        <p onClick={() => setDiscount(index.discount)} color='primary' key={sp}>{index.size}</p>))}<div>
-                            {product.variants.map((index, sp) => (
-                        <Button onClick={() => setDiscount(index.discount)} variant='ghost' color='primary' key={sp}>{index.color}</Button>
-                            ))}</div>
+                    {product ? product.variants.map((index, sp) => (
+                        <Button onClick={() => setDiscount(index.discount)} color='primary' key={sp}>{index.size}</Button>)) : ""}
+                  </div>          
+                <div className='flex flex-row gap-x-2'>
+                {product ? product.variants.map((index, sp) => (
+                        <Button onClick={() => setDiscount(index.discount)} variant='outline' color='primary' key={sp}>{index.color}</Button>
+                            )) : ""}
                 </div>
               </div>
                 <div className='flex flex-col gap-x-12 gap-y-5'>
                     <div className='flex flex-row items-center mt-2'>
-                        <Button isIconOnly className='bg-gray-200 py-2 px-5 rounded-lg text-primary text-3xl' onClick={() => setAmount((prev) => prev - 1)}>-</Button>
+                        <Button size='icon' className='bg-gray-200 py-2 px-5 rounded-lg text-primary text-3xl' onClick={() => setAmount((prev) => prev - 1)}>-</Button>
                         <span className='py-4 px-6 rounded-lg'>{amount}</span>
-                        <Button isIconOnly className='bg-gray-200 py-2 px-4 rounded-lg text-primary text-3xl' onClick={() => setAmount((prev) => prev + 1)}>+</Button>
+                        <Button size='icon' className='bg-gray-200 py-2 px-4 rounded-lg text-primary text-3xl' onClick={() => setAmount((prev) => prev + 1)}>+</Button>
                     </div>
                     <div className='flex flex-row gap-x-5 mt-2'>
                         <Button color='primary' size="lg">Buy Now</Button>
-                        <Button color='primary' variant='bordered' size="lg">Add to Cart</Button>
+                        <Button color='primary' variant='outline' size="lg">Add to Cart</Button>
                     </div>
                 </div>
             </div>
