@@ -47,3 +47,21 @@ export interface SanityProduct extends Omit<InventoryProduct, "images"> {
     }
 }
 
+export interface simpleBlogCard {
+  title: string;
+  smallDescription: string;
+  currentSlug: string;
+  description: any;
+  description1: any;
+  description2: any;
+  images: any;
+}
+
+export interface fullBlog {
+  currentSlug: string;
+  title: string;
+  description: any;
+  description1: any;
+  description2: any;
+  images: any;
+}

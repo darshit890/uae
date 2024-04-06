@@ -19,6 +19,11 @@ export const blog = defineType({
             },
         },
         {
+            name: 'smallDescription',
+            type: 'text',
+            title: 'Small Description',
+          },
+        {
             name: "images",
             title: "Images",
             type: "array",
@@ -27,8 +32,20 @@ export const blog = defineType({
         {
             name: "description",
             title: "Description",
-            type: "array",
-            of: [{ type: "string"}]
+            type: 'array',
+            of: [{ type: 'block'}],
+        },
+        {
+            name: "description1",
+            title: "Description1",
+            type: 'array',
+            of: [{ type: 'block'}],
+        },
+        {
+            name: "description12",
+            title: "Description2",
+            type: 'array',
+            of: [{ type: 'block'}],
         },
         {
             name: "sku",
