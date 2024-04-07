@@ -5,6 +5,8 @@ import { ProductFilters } from "@/components/productfilters";
 import { ProductGrid } from "@/components/productgrid";
 import { ProductSort } from '@/components/product-sort';
 
+const revalidate = 30
+
 interface props {
   searchParams: {
     date?: string
