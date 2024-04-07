@@ -6,9 +6,7 @@ import { Heart, ShoppingBagIcon, XCircle } from "lucide-react"
 import { urlFor } from "@/app/lib/sanity"
 
 import { SanityProduct } from "@/lib/inventory"
-import { shimmer, toBase64 } from "@/lib/image"
 import { Card, CardContent } from "./ui/card"
-import { Button } from "./ui/button"
 import { FaStar } from "react-icons/fa"
 
 interface props {
