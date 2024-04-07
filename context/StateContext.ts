@@ -112,7 +112,7 @@ export const StateContext = ({ children }: { children: React.ReactNode }) => {
 	};
 
 	const incQty = (): void => {
-		setQty  ((prev) => prev + 1);
+		setQty((prev) => prev + 1);
 	};
 	const decQty = () => {
 		setQty((prevQty) => {
@@ -121,37 +121,9 @@ export const StateContext = ({ children }: { children: React.ReactNode }) => {
 		});
 	};
 
-	 useEffect(()=>{
-	 	setTotalPrice(prev=>(Math.round((prev + Number.EPSILON) * 100) / 100))
-	 },[totalPrice])
-
-	return (
-		<Context.Provider>
-			value=(
-				showCart,
-				cartItems,
-				totalPrice,
-				totalQuantities,
-				qty,
-				inCheckoutProcess,
-				lightTheme,
-				incQty,
-				decQty,
-				onAdd,
-				setShowCart,
-				toggleCartItemQuantity,
-				onRemove,
-				setQty,
-				setCartItems,
-				setTotalPrice,
-				setTotalQuantities,
-				setInCheckoutProcess,
-				setLightTheme,
-	)
-		
-			{children}
-		</Context.Provider>
-	);
+	useEffect(() => {
+		setTotalPrice(prev => (Math.round((prev + Number.EPSILON) * 100) / 100))
+	}, [totalPrice])
 };
 
 export const useStateContext = () => useContext(Context);
