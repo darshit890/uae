@@ -36,7 +36,13 @@ export function ProductGrid({ products }: props) {
         <Card className="w-[230px] h-[320px]">
           <CardContent>
             <div className="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg ">
-                
+                <Image
+                src={urlFor(product.images[0]).url()}
+                alt={"name"}
+                width={225}
+                height={280}
+                className="h-full w-full object-cover object-center"
+                />
             </div>
           </CardContent>
           <h3 className="text-xs text-muted-foreground mt-4 font-medium px-6 line-clamp-2">{product.name}</h3>
