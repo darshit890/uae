@@ -55,7 +55,7 @@ const FilterPage = async ({ searchParams }: props) => {
         </aside>
         <div className='w-[600px] md:w-[800px] m-10 '>
           <ProductSort />
-        <ProductGrid products={product} />
+        <ProductGrid products={products} />
         </div>
     </section>
   )
