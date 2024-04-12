@@ -5,6 +5,7 @@ import Link from "next/link"
 import { Heart, ShoppingBagIcon, XCircle } from "lucide-react"
 import { urlFor } from "@/app/lib/sanity"
 import { shimmer, toBase64 } from "@/lib/image"
+import { Button } from "./ui/button"
 
 import { SanityProduct } from "@/lib/inventory"
 import { Card, CardContent } from "./ui/card"
