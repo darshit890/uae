@@ -4,6 +4,7 @@ import Image from "next/image"
 import Link from "next/link"
 import { Heart, ShoppingBagIcon, XCircle } from "lucide-react"
 import { urlFor } from "@/app/lib/sanity"
+import { shimmer, toBase64 } from "@/lib/image"
 
 import { SanityProduct } from "@/lib/inventory"
 import { Card, CardContent } from "./ui/card"
